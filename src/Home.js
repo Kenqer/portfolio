@@ -51,7 +51,7 @@ const Home = () => {
                             </a>
                             </div>
                         <div className="w-full h-auto border border-black rounded-xl flex flex-col relative px-3 pt-3 hover:opacity-70 hover:scale-[108%] duration-200">
-                            <a href="">
+                            <a target="_blank" href="https://www.w3docs.com/quiz/certificate/3/100/1704877126/Javier%20Kennedi/b5bef9956d838ff3e475f2ae3fe38799">
                             <img className="bg-cover" src={img2} alt="jawa" />
                             <div className='px-1 py-4'>
                                 <div className='text-lg font-mono flex justify-between'>
@@ -63,7 +63,7 @@ const Home = () => {
                             </a>
                         </div>
                         <div className="w-full h-auto border border-black rounded-xl flex flex-col relative px-3 pt-3 hover:opacity-70 hover:scale-[108%] duration-200">
-                            <a href="">
+                            <a target='_blank' href="https://www.w3docs.com/quiz/certificate/2/100/1704879442/Javier%20Kennedi/337cc6f88702cc7fe2a7a07a69c8338f">
                             <img className="bg-cover" src={img4} alt="jawa" />
                             <div className='px-1 py-4'>
                                 <div className='text-lg font-mono flex justify-between'>
@@ -75,7 +75,7 @@ const Home = () => {
                             </a> 
                         </div>
                         <div className="w-full h-auto border border-black rounded-xl flex flex-col relative px-3 pt-3 hover:opacity-70 hover:scale-[108%] duration-200">
-                            <a href="">
+                            <a target='_blank' href="https://www.w3docs.com/quiz/certificate/5/100/1704876717/Javier%20Kennedi/32ea25c2344d1bbf5f256bfc5a63c359">
                             <img className="bg-cover" src={img3} alt="jawa" />
                             <div className='px-1 py-4'>
                                 <div className='text-lg font-mono flex justify-between'>
