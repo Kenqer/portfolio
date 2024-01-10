@@ -1,0 +1,16 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.components {
+  @apply md:ml-8 text-xl md:my-0 my-7
+}
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.htmls {
+  color: #E34F26;
+}
