@@ -14,3 +14,17 @@
 .htmls {
   color: #E34F26;
 }
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  background: rgb(205, 205, 205);
+}
+::-webkit-scrollbar-thumb{
+  background: rgb(109, 109, 109);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: rgb(25, 25, 25);
+}
