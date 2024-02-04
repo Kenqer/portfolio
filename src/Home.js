@@ -5,7 +5,7 @@ const Home = () => {
         <div>
             <header className="home">
                 <div className="w-full h-full flex flex-col gap-2 justify-center pt-[25vh] px-[10%] z-[1] text-5xl md:text-7xl ">
-                    <div className="absolute z-[1] ml-[-10vh] md:w-full w-[100vh]">
+                    <div className="absolute z-[1] ml-[-10vh] w-[100vh]">
                         <img src="./img/BG.png" alt="" />
                     </div>
                     <div className="z-[2]">
