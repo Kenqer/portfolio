@@ -1,4 +1,3 @@
-import cat from './img/cat.jpg';
 
 const About = () => {
     return ( 
@@ -6,7 +5,7 @@ const About = () => {
             <header className="home">
             <div className="w-full h-full flex flex-col-reverse gap-2 justify-center pt-[25vh] px-[10%] z-[1] text-5xl md:text-7xl md:flex-row">
                 <div className='relative w-full md:w-[500px] h-full flex justify-center '>
-                    <img src={cat} alt="car" />
+                    <img src="img/cat.jpg" alt="car" />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col gap-7'>
                 <div className="w-1/2 md:w-full flex gap-3">

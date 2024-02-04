@@ -3,6 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family: jawa;
+  src: url(./font/CaviarDreams.ttf);
+}
+
+html,body {
+  scroll-behavior: smooth;
+}
+
 .components {
   @apply md:ml-8 text-xl md:my-0 my-7
 }
@@ -22,7 +32,7 @@
   background: rgb(205, 205, 205);
 }
 ::-webkit-scrollbar-thumb{
-  background: rgb(109, 109, 109);
+  background: rgb(76, 150, 140);
   border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover{
