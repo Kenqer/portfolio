@@ -17,21 +17,21 @@ const Navbar = () => {
                             <Link to="/">
                                 <li className="flex flex-col group">
                                     <span className="text-xl font-semibold hover:text-teal-600 cursor-pointer group-hover:scale-105 duration-200 z-[2]">Home</span>
-                                    <span className="w-full border-b-[5px] rounded-b-md border-teal-600 scale-0 group-hover:scale-110 duration-200">
+                                    <span className="w-[300px] md:w-full border-b-[5px] rounded-b-md border-teal-600 scale-0 group-hover:scale-110 duration-200">
                                     </span>
                                 </li>
                             </Link>
                             <Link to="/about">
                                 <li className="flex flex-col group">
                                     <span className="text-xl font-semibold hover:text-teal-600 cursor-pointer group-hover:scale-105 duration-200 z-[2]">About</span>
-                                    <span className="w-full border-b-[5px] rounded-b-md border-teal-600 scale-0 group-hover:scale-110 duration-200">
+                                    <span className="w-[300px] md:w-full border-b-[5px] rounded-b-md border-teal-600 scale-0 group-hover:scale-110 duration-200">
                                     </span>
                                 </li>
                             </Link>
                             <Link to="/contact">
                                 <li className="flex flex-col group">
                                     <span className="text-xl font-semibold hover:text-teal-600 cursor-pointer group-hover:scale-105 duration-200 z-[2]">Contact</span>
-                                    <span className="w-full border-b-[5px] rounded-b-md border-teal-600 scale-0 group-hover:scale-110 duration-200">
+                                    <span className="w-[300px] md:w-full border-b-[5px] rounded-b-md border-teal-600 scale-0 group-hover:scale-110 duration-200">
                                     </span>
                                 </li>
                             </Link>
@@ -41,7 +41,7 @@ const Navbar = () => {
                         <ul className="mr-10 flex flex-row gap-5">
                             <li className="cursor-pointer hover:text-yellow-600 hover:scale-105 duration-200"><a href="#certificate"><i className="fa-solid fa-trophy"></i></a></li>
                             <li className="cursor-pointer hover:text-purple-600 hover:scale-105 duration-200"><a href="#skills"><i className="fa-solid fa-microchip"></i></a></li>
-                            <li className="cursor-pointer hover:text-purple-600 hover:scale-105 duration-200"><i className="fa-solid fa-briefcase"></i></li>
+                            <li className="cursor-pointer hover:text-teal-600 hover:scale-105 duration-200"><a href="#project"><i className="fa-solid fa-briefcase"></i></a></li>
                         </ul>
                         <div onClick={()=>setOpen(!open)} className="mr-10 text-3xl md:hidden cursor-pointer">
                             <i name={open ? 'close':'menu'} className={`${open ? 'fa-solid fa-xmark':'fa-solid fa-bars-staggered'}`}></i>

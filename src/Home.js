@@ -4,8 +4,8 @@ const Home = () => {
     return (
         <div>
             <header className="home">
-                <div className="w-full h-full flex flex-col gap-2 justify-center pt-[25vh] px-[10%] z-[1] text-5xl md:text-7xl ">
-                    <div className="absolute z-[1] ml-[-10vh] w-[100vh]">
+                <div className="w-full h-[78vh] md:h-full relative overflow-hidden md:static md:overflow-visible flex flex-col gap-2 justify-center pt-[25vh] px-[10%] z-[1] text-5xl md:text-7xl ">
+                    <div className="absolute z-[1] ml-[-10vh] w-[100vh] ">
                         <img src="./img/BG.png" alt="" />
                     </div>
                     <div className="z-[2]">
@@ -42,11 +42,11 @@ const Home = () => {
                         </div>
                     </div>
                     <div>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-[2%]">
-                            <div className="w-full h-auto group cursor-pointer border border-black rounded-xl flex flex-col relative px-3 pt-3 hover:opacity-70 hover:scale-[103%] duration-200">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-[2%] ">
+                            <div className="w-full h-auto group cursor-pointer border hover:border-b-8 hover:border-b-teal-600 hover:rounded-b-2xl rounded-xl flex flex-col relative px-3 pt-3 hover:scale-[103%] duration-200 shadow-lg">
                                 <a target='_blank' href="https://officeseamolec-my.sharepoint.com/personal/seaqis_seameo_id/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fseaqis_seameo_id%2FDocuments%2FSEAQIS%20Cloud%2FFrom%20Internal%20Data%2FPer-year%20activities%2F2023%2F12%2E%20DECEMBER%2F07%2E%20Web%20Cloud%20Based&ga=1">
-                                    <div className="group-hover:border-b-8 border-teal-600 rounded-b-xl duration-200">
-                                        <img className="bg-cover" src="./img/seameo.jpg" alt="jawa" />
+                                    <div className="rounded-b-xl duration-200">
+                                        <img src="./img/seameo.jpg" alt="jawa" />
                                     </div>
                                     <div className='px-1 py-4'>
                                         <div className='text-lg font-mono flex justify-between'>
@@ -57,7 +57,7 @@ const Home = () => {
                                     </div>
                                 </a>
                             </div>
-                            <div className="w-full h-auto cursor-pointer border border-black rounded-xl flex flex-col relative px-3 pt-3 hover:opacity-70 hover:scale-[103%] duration-200">
+                            <div className="w-full h-auto cursor-pointer border rounded-xl hover:border-b-8 hover:border-b-teal-600 hover:rounded-b-2xl flex flex-col relative px-3 pt-3  hover:scale-[103%] duration-200 shadow-lg">
                                 <a target="_blank" href="https://www.w3docs.com/quiz/certificate/3/100/1704877126/Javier%20Kennedi/b5bef9956d838ff3e475f2ae3fe38799">
                                     <img className="bg-cover" src="img/c2.png" alt="jawa" />
                                     <div className='px-1 py-4'>
@@ -69,7 +69,7 @@ const Home = () => {
                                     </div>
                                 </a>
                             </div>
-                            <div className="w-full h-auto cursor-pointer border border-black rounded-xl flex flex-col relative px-3 pt-3 hover:opacity-70 hover:scale-[103%] duration-200">
+                            <div className="w-full h-auto cursor-pointer border rounded-xl hover:border-b-8 hover:border-b-teal-600 hover:rounded-b-2xl flex flex-col relative px-3 pt-3  hover:scale-[103%] duration-200 shadow-lg">
                                 <a target='_blank' href="https://www.w3docs.com/quiz/certificate/2/100/1704879442/Javier%20Kennedi/337cc6f88702cc7fe2a7a07a69c8338f">
                                     <img className="bg-cover" src="img/c4.png" alt="jawa" />
                                     <div className='px-1 py-4'>
@@ -81,7 +81,7 @@ const Home = () => {
                                     </div>
                                 </a>
                             </div>
-                            <div className="w-full h-auto cursor-pointer border border-black rounded-xl flex flex-col relative px-3 pt-3 hover:opacity-70 hover:scale-[103%] duration-200">
+                            <div className="w-full h-auto cursor-pointer border  rounded-xl hover:border-b-8 hover:border-b-teal-600 hover:rounded-b-2xl flex flex-col relative px-3 pt-3  hover:scale-[103%] duration-200 shadow-lg">
                                 <a target='_blank' href="https://www.w3docs.com/quiz/certificate/5/100/1704876717/Javier%20Kennedi/32ea25c2344d1bbf5f256bfc5a63c359">
                                     <img className="bg-cover" src="/img/c3.png" alt="jawa" />
                                     <div className='px-1 py-4'>
@@ -109,7 +109,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='flex flex-col pt-[2%]'>
-                        <span className='border border-slate-400 rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
+                        <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
                             <ion-icon name="language-outline"></ion-icon>
                             Language
                         </span>
@@ -129,7 +129,7 @@ const Home = () => {
                         </ul>
                     </div>
                     <div className='flex flex-col pt-[2%]'>
-                        <span className='border border-slate-400 rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
+                        <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
                             <i className="fa-solid fa-icons"></i>
                             Frontend
                         </span>
@@ -146,7 +146,7 @@ const Home = () => {
                         </ul>
                     </div>
                     <div className='flex flex-col pt-[2%]'>
-                        <span className='border border-slate-400 rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
+                        <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
                             <i className="fa-solid fa-helmet-safety"></i>
                             Backend
                         </span>
@@ -157,7 +157,7 @@ const Home = () => {
                         </ul>
                     </div>
                     <div className='flex flex-col pt-[2%]'>
-                        <span className='border border-slate-400 rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
+                        <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
                             <i className="fa-solid fa-plus"></i>
                             Other
                         </span>
@@ -169,6 +169,74 @@ const Home = () => {
                                 <i className="fa-brands fa-git-alt text-red-600"></i>
                             </li>
                         </ul>
+                    </div>
+                </section>
+                <section id="project" className="px-[10%] flex flex-col">
+                    <div className="w-full flex">
+                        <div className="flex gap-3 z-[2]">
+                            <span className="text-7xl text-teal-900 hover:text-teal-500 hover:scale-110 duration-300">
+                                <i className="fa-solid fa-briefcase"></i>
+                            </span>
+                            <div className="flex flex-col">
+                                <div>
+                                    <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-yellow-300 font-semibold text-5xl">Project</h1>
+                                </div>
+                                <div>
+                                    <p className="text-xl text-black font-mono">My Ongoing and Past Project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-[2%]">
+                            <div className="w-full h-auto overflow-hidden group cursor-pointer border rounded-xl flex flex-col relative hover:scale-[103%] duration-200 shadow-lg pb-10">
+                                <a target='_blank' href="https://flixflare.vercel.app">
+                                    <div className="rounded-b-xl duration-200">
+                                        <img src="./img/flix.png" alt="jawa" />
+                                    </div>
+                                    <div className='px-7 py-4'>
+                                        <div className="">
+                                            <div className='text-lg font-mono flex justify-between'>
+                                                <em>Work in Progress</em>
+                                                <em>Jan 2024</em>
+                                            </div>
+                                            <div className="flex flex-col gap-3 pb-3">
+                                                <h1 className='font-semibold text-xl'>FlixFlare (Movie App)</h1>
+                                                <p className="text-gray-500">I tried to create a movie website to only stream the movie for free but, it look like, it still have a lot things to work on. Like fetching an
+                                                    API and make it more responsive and beautiful. Also I don't have a lot of time to work on this website, so if I have  a lot of free time I will finish this project. Stay tuned. </p>
+                                            </div>
+                                        </div>
+                                        <div className="flex flex-row items-end gap-3">
+                                            <i className="fa-brands fa-react text-3xl text-blue-400"></i>
+                                            <i><svg className='w-[35px] h-[35px] fill-blue-400' height="24" viewBox="0 0 24 24" width="34" xmlns="http://www.w3.org/2000/svg"><path d="M18.5 9.51a4.22 4.22 0 0 1-1.91-1.34A5.77 5.77 0 0 0 12 6a4.72 4.72 0 0 0-5 4 3.23 3.23 0 0 1 3.5-1.49 4.32 4.32 0 0 1 1.91 1.35A5.77 5.77 0 0 0 17 12a4.72 4.72 0 0 0 5-4 3.2 3.2 0 0 1-3.5 1.51zm-13 4.98a4.22 4.22 0 0 1 1.91 1.34A5.77 5.77 0 0 0 12 18a4.72 4.72 0 0 0 5-4 3.23 3.23 0 0 1-3.5 1.49 4.32 4.32 0 0 1-1.91-1.35A5.8 5.8 0 0 0 7 12a4.72 4.72 0 0 0-5 4 3.2 3.2 0 0 1 3.5-1.51z" /></svg></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div className="w-full h-auto overflow-hidden group cursor-pointer border rounded-xl flex flex-col relative hover:scale-[103%] duration-200 shadow-lg pb-10">
+                                <a target='_blank' href="https://legoin.org">
+                                    <div className="rounded-b-xl duration-200">
+                                        <img src="./img/port.png" alt="jawa" />
+                                    </div>
+                                    <div className='px-7 py-4'>
+                                        <div className="pb-20">
+                                            <div className='text-lg font-mono flex justify-between'>
+                                                <em>Ongoing</em>
+                                                <em>Jan 2024</em>
+                                            </div>
+                                            <div className="flex flex-col gap-3 pb-3">
+                                                <h1 className='font-semibold text-xl'>Personal Website</h1>
+                                                <p className="text-gray-500">I create portfolio website projects with several features such as contacts, skills, and projects</p>
+                                            </div>
+                                        </div>
+                                        <div className="flex flex-row items-end gap-3">
+                                            <i className="fa-brands fa-react text-3xl text-blue-400"></i>
+                                            <i><svg className='w-[35px] h-[35px] fill-blue-400' height="24" viewBox="0 0 24 24" width="34" xmlns="http://www.w3.org/2000/svg"><path d="M18.5 9.51a4.22 4.22 0 0 1-1.91-1.34A5.77 5.77 0 0 0 12 6a4.72 4.72 0 0 0-5 4 3.23 3.23 0 0 1 3.5-1.49 4.32 4.32 0 0 1 1.91 1.35A5.77 5.77 0 0 0 17 12a4.72 4.72 0 0 0 5-4 3.2 3.2 0 0 1-3.5 1.51zm-13 4.98a4.22 4.22 0 0 1 1.91 1.34A5.77 5.77 0 0 0 12 18a4.72 4.72 0 0 0 5-4 3.23 3.23 0 0 1-3.5 1.49 4.32 4.32 0 0 1-1.91-1.35A5.8 5.8 0 0 0 7 12a4.72 4.72 0 0 0-5 4 3.2 3.2 0 0 1 3.5-1.51z" /></svg></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
