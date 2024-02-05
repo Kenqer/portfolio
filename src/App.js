@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import { Analytics } from '@vercel/analytics/*';
 import Navbar from './Navbar';
 import Home from './Home';
 import About from './About';
@@ -31,7 +31,7 @@ function App() {
       </div>
       
     </div>
-
+    <Analytics/>
     </Router>
   );
 }
