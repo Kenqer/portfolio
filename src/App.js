@@ -1,4 +1,4 @@
-import { Analytics } from '@vercel/analytics/*';
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './Navbar';
 import Home from './Home';
 import About from './About';
