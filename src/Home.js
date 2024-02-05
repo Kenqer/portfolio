@@ -5,7 +5,7 @@ const Home = () => {
         <div>
             <header className="home">
                 <div className="w-full h-[78vh] md:h-full relative overflow-hidden md:static md:overflow-visible flex flex-col gap-2 justify-center pt-[25vh] px-[10%] z-[1] text-5xl md:text-7xl ">
-                    <div className="absolute z-[1] ml-[-10vh] w-[100vh] ">
+                    <div className="absolute z-[1] ml-[-10vh] w-[100vh] md:w-[80vh] lg:w-[100vh] ">
                         <img src="./img/BG.png" alt="" />
                     </div>
                     <div className="z-[2]">
@@ -28,9 +28,6 @@ const Home = () => {
             <main className="my-[80vw] md:my-[20vw] flex flex-col gap-44">
                 <section id="certificate" className="px-[10%] flex flex-col">
                     <div className="w-full flex">
-                        <div className="absolute w-96 mt-[-7vh]">
-
-                        </div>
                         <div className="flex gap-3 z-[2]">
                             <span className="text-7xl text-amber-600 hover:text-amber-900 hover:scale-110 duration-300">
                                 <i className="fa-solid fa-trophy"></i>
@@ -42,7 +39,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-[2%] ">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-[2%] ">
                             <div className="w-full h-auto group cursor-pointer border hover:border-b-8 hover:border-b-teal-600 hover:rounded-b-2xl rounded-xl flex flex-col relative px-3 pt-3 hover:scale-[103%] duration-200 shadow-lg">
                                 <a target='_blank' href="https://officeseamolec-my.sharepoint.com/personal/seaqis_seameo_id/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fseaqis_seameo_id%2FDocuments%2FSEAQIS%20Cloud%2FFrom%20Internal%20Data%2FPer-year%20activities%2F2023%2F12%2E%20DECEMBER%2F07%2E%20Web%20Cloud%20Based&ga=1">
                                     <div className="rounded-b-xl duration-200">
