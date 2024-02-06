@@ -29,7 +29,7 @@ const Home = () => {
                 <section id="certificate" className="px-[10%] flex flex-col">
                     <div className="w-full flex">
                         <div className="flex gap-3 z-[2]">
-                            <span className="text-7xl text-amber-600 hover:text-amber-900 hover:scale-110 duration-300">
+                            <span className="text-7xl text-amber-600 hover:text-amber-900 hover:scale-110 duration-300 trophy">
                                 <i className="fa-solid fa-trophy"></i>
                             </span>
                             <div className="flex flex-col">
@@ -41,9 +41,9 @@ const Home = () => {
                     <div>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-[2%] ">
                             <div className="w-full h-auto group cursor-pointer border hover:border-b-8 hover:border-b-teal-600 hover:rounded-b-2xl rounded-xl flex flex-col relative px-3 pt-3 hover:scale-[103%] duration-200 shadow-lg">
-                                <a target='_blank' href="https://officeseamolec-my.sharepoint.com/personal/seaqis_seameo_id/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fseaqis_seameo_id%2FDocuments%2FSEAQIS%20Cloud%2FFrom%20Internal%20Data%2FPer-year%20activities%2F2023%2F12%2E%20DECEMBER%2F07%2E%20Web%20Cloud%20Based&ga=1">
-                                    <div className="rounded-b-xl duration-200">
-                                        <img src="./img/seameo.jpg" alt="jawa" />
+                                <a target='_blank' href="https://drive.google.com/drive/folders/1h7UUQpPJU86a8QRKQmEy3JAWzOaE3nHt?usp=drive_link">
+                                    <div className="">
+                                        <img className="aspect-[16/11.25]" src="./img/seameo.png" alt="jawa" />
                                     </div>
                                     <div className='px-1 py-4'>
                                         <div className='text-lg font-mono flex justify-between'>
@@ -56,7 +56,9 @@ const Home = () => {
                             </div>
                             <div className="w-full h-auto cursor-pointer border rounded-xl hover:border-b-8 hover:border-b-teal-600 hover:rounded-b-2xl flex flex-col relative px-3 pt-3  hover:scale-[103%] duration-200 shadow-lg">
                                 <a target="_blank" href="https://www.w3docs.com/quiz/certificate/3/100/1704877126/Javier%20Kennedi/b5bef9956d838ff3e475f2ae3fe38799">
-                                    <img className="bg-cover" src="img/c2.png" alt="jawa" />
+                                    <div className="">
+                                        <img className="aspect-[16/11.25]" src="img/c2.png" alt="jawa" />
+                                    </div>
                                     <div className='px-1 py-4'>
                                         <div className='text-lg font-mono flex justify-between'>
                                             <em>Non-Academy</em>
@@ -68,7 +70,7 @@ const Home = () => {
                             </div>
                             <div className="w-full h-auto cursor-pointer border rounded-xl hover:border-b-8 hover:border-b-teal-600 hover:rounded-b-2xl flex flex-col relative px-3 pt-3  hover:scale-[103%] duration-200 shadow-lg">
                                 <a target='_blank' href="https://www.w3docs.com/quiz/certificate/2/100/1704879442/Javier%20Kennedi/337cc6f88702cc7fe2a7a07a69c8338f">
-                                    <img className="bg-cover" src="img/c4.png" alt="jawa" />
+                                    <img className="aspect-[16/11.25]" src="img/c4.png" alt="jawa" />
                                     <div className='px-1 py-4'>
                                         <div className='text-lg font-mono flex justify-between'>
                                             <em>Non-Academy</em>
@@ -80,7 +82,7 @@ const Home = () => {
                             </div>
                             <div className="w-full h-auto cursor-pointer border  rounded-xl hover:border-b-8 hover:border-b-teal-600 hover:rounded-b-2xl flex flex-col relative px-3 pt-3  hover:scale-[103%] duration-200 shadow-lg">
                                 <a target='_blank' href="https://www.w3docs.com/quiz/certificate/5/100/1704876717/Javier%20Kennedi/32ea25c2344d1bbf5f256bfc5a63c359">
-                                    <img className="bg-cover" src="/img/c3.png" alt="jawa" />
+                                    <img className="aspect-[16/11.25]" src="/img/c3.png" alt="jawa" />
                                     <div className='px-1 py-4'>
                                         <div className='text-lg font-mono flex justify-between'>
                                             <em>Non-Academy</em>
@@ -97,8 +99,8 @@ const Home = () => {
                 </section>
                 <section id="skills" className="px-[10%] flex flex-col">
                     <div className="w-full flex gap-3 ">
-                        <span className="text-7xl text-fuchsia-400 hover:text-fuchsia-900 hover:scale-110 duration-300">
-                            <i className="fa-solid fa-microchip"></i>
+                        <span className="chip text-7xl text-fuchsia-400 hover:text-fuchsia-900 hover:scale-110 duration-300">
+                            <i class="fa-solid fa-gear"></i>
                         </span>
                         <div className="flex flex-col">
                             <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-400 to-pink-900 font-semibold text-5xl">Skills</h1>
@@ -171,7 +173,7 @@ const Home = () => {
                 <section id="project" className="px-[10%] flex flex-col">
                     <div className="w-full flex">
                         <div className="flex gap-3 z-[2]">
-                            <span className="text-7xl text-teal-900 hover:text-teal-500 hover:scale-110 duration-300">
+                            <span className="brief text-7xl text-teal-900 hover:text-teal-500 hover:scale-110 duration-300">
                                 <i className="fa-solid fa-briefcase"></i>
                             </span>
                             <div className="flex flex-col">

@@ -38,3 +38,30 @@ html,body {
 ::-webkit-scrollbar-thumb:hover{
   background: rgb(25, 25, 25);
 }
+
+.trophy {
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%, 100% {transform: scale(1);}
+  50%{transform: scale(1); color: rgb(255, 209, 56);}
+}
+
+.chip {
+  animation: blinks 3s infinite;
+}
+@keyframes blinks {
+  0% {transform: rotate(0deg);}
+  50%{transform:rotate(83deg);}
+  100%{transform: rotate(0deg);}
+}
+
+.brief {
+  animation: jump 3s infinite;
+}
+@keyframes jump {
+  0% {transform: translateY(0);}
+  40% {transform: translateY(-10px);}
+  60% {transform: translateY(-5px);}
+}
+
