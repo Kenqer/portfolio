@@ -7,8 +7,8 @@ const Navbar = () => {
         <header className="w-full">
             <nav className="bg-transparent">
                 <div className="flex flex-row items-center justify-between">
-                    <div className="w-20 ml-4 cursor-pointer">
-                        <img src="./img/logo.png" alt="" />
+                    <div className="ml-4 cursor-pointer">
+                        <img className="w-20 h-full" src="./img/logo.png" alt="" />
                     </div>
                     <div className="py-10">
                         <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white
