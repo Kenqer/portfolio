@@ -242,7 +242,7 @@ const Home = () => {
                                 <div className="w-full h-auto overflow-hidden group cursor-pointer border rounded-xl flex flex-col relative hover:scale-[103%] duration-200 shadow-lg pb-10">
                                     <a target='_blank' href="https://flixflare.vercel.app">
                                         <div className="rounded-b-xl duration-200">
-                                            <img src="./img/flix.png" alt="jawa" />
+                                            <img src="./img/flix.webp" alt="jawa" />
                                         </div>
                                         <div className='px-7 py-4'>
                                             <div className="">
@@ -266,7 +266,7 @@ const Home = () => {
                                 <div className="w-full h-auto overflow-hidden group cursor-pointer border rounded-xl flex flex-col relative hover:scale-[103%] duration-200 shadow-lg pb-10">
                                     <a target='_blank' href="https://legoin.org">
                                         <div className="rounded-b-xl duration-200">
-                                            <img src="./img/port.png" alt="jawa" />
+                                            <img src="./img/port.webp" alt="jawa" />
                                         </div>
                                         <div className='px-7 py-4'>
                                             <div className="pb-20">
