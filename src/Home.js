@@ -46,7 +46,7 @@ const Home = () => {
                                 transition={{
                                     delay: 0.4
                                 }}
-                                className="hover:scale-110 duration-300 hover:text-gray-800" href="https://github.com/Kenqer" target="_blank"><ion-icon name="logo-github"></ion-icon></motion.a>
+                                className="hover:scale-110 duration-300 hover:text-white" href="https://github.com/Kenqer" target="_blank"><ion-icon name="logo-github"></ion-icon></motion.a>
                             <motion.a
                                 variants={iconList}
                                 initial="hidd"
