@@ -17,8 +17,8 @@ const Home = () => {
         <div>
             <header className="home">
                 <div className="w-full h-[78vh] md:h-full relative overflow-hidden md:static md:overflow-visible flex flex-col gap-2 justify-center pt-[25vh] px-[10%] z-[1] text-5xl md:text-7xl ">
-                    <div className="absolute z-[1] ml-[-10vh] w-[100vh] md:w-[80vh] lg:w-[100vh] ">
-                        <img src="./img/BG.png" alt="" />
+                    <div className="absolute z-[1] ml-[-10vh]  ">
+                        <img className="w-[100vh] md:w-[80vh] lg:w-[100vh] fill-teal-600" src="./img/bg.svg" alt="" />
                     </div>
                     <div className="z-[2]">
                         <Reveal>
@@ -88,7 +88,7 @@ const Home = () => {
                                 <div className="w-full h-auto group cursor-pointer border hover:border-b-8 hover:border-b-teal-600 hover:rounded-b-2xl rounded-xl flex flex-col relative px-3 pt-3 hover:scale-[103%] duration-200 shadow-lg">
                                     <a target='_blank' href="https://drive.google.com/drive/folders/1h7UUQpPJU86a8QRKQmEy3JAWzOaE3nHt?usp=drive_link">
                                         <div className="">
-                                            <img className="aspect-[16/11.25]" src="./img/seameo.png" alt="jawa" />
+                                            <img className="aspect-[16/11.25]" src="./img/seameo.webp" alt="jawa" />
                                         </div>
                                         <div className='px-1 py-4'>
                                             <div className='text-lg font-mono flex justify-between'>
@@ -102,7 +102,7 @@ const Home = () => {
                                 <div className="w-full h-auto cursor-pointer border rounded-xl hover:border-b-8 hover:border-b-teal-600 hover:rounded-b-2xl flex flex-col relative px-3 pt-3  hover:scale-[103%] duration-200 shadow-lg">
                                     <a target="_blank" href="https://www.w3docs.com/quiz/certificate/3/100/1704877126/Javier%20Kennedi/b5bef9956d838ff3e475f2ae3fe38799">
                                         <div className="">
-                                            <img className="aspect-[16/11.25]" src="img/c2.png" alt="jawa" />
+                                            <img className="aspect-[16/11.25]" src="img/c2.webp" alt="jawa" />
                                         </div>
                                         <div className='px-1 py-4'>
                                             <div className='text-lg font-mono flex justify-between'>
@@ -115,7 +115,7 @@ const Home = () => {
                                 </div>
                                 <div className="w-full h-auto cursor-pointer border rounded-xl hover:border-b-8 hover:border-b-teal-600 hover:rounded-b-2xl flex flex-col relative px-3 pt-3  hover:scale-[103%] duration-200 shadow-lg">
                                     <a target='_blank' href="https://www.w3docs.com/quiz/certificate/2/100/1704879442/Javier%20Kennedi/337cc6f88702cc7fe2a7a07a69c8338f">
-                                        <img className="aspect-[16/11.25]" src="img/c4.png" alt="jawa" />
+                                        <img className="aspect-[16/11.25]" src="img/c4.webp" alt="jawa" />
                                         <div className='px-1 py-4'>
                                             <div className='text-lg font-mono flex justify-between'>
                                                 <em>Non-Academy</em>
@@ -127,7 +127,7 @@ const Home = () => {
                                 </div>
                                 <div className="w-full h-auto cursor-pointer border  rounded-xl hover:border-b-8 hover:border-b-teal-600 hover:rounded-b-2xl flex flex-col relative px-3 pt-3  hover:scale-[103%] duration-200 shadow-lg">
                                     <a target='_blank' href="https://www.w3docs.com/quiz/certificate/5/100/1704876717/Javier%20Kennedi/32ea25c2344d1bbf5f256bfc5a63c359">
-                                        <img className="aspect-[16/11.25]" src="/img/c3.png" alt="jawa" />
+                                        <img className="aspect-[16/11.25]" src="/img/c3.webp" alt="jawa" />
                                         <div className='px-1 py-4'>
                                             <div className='text-lg font-mono flex justify-between'>
                                                 <em>Non-Academy</em>
