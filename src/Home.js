@@ -17,15 +17,15 @@ const Home = () => {
         <div>
             <header className="home">
                 <div className="w-full h-[78vh] md:h-full relative overflow-hidden md:static md:overflow-visible flex flex-col gap-2 justify-center pt-[25vh] px-[10%] z-[1] text-5xl md:text-7xl ">
-                    <div className="absolute z-[1] ml-[-10vh]  ">
-                        <img className="w-[100vh] md:w-[80vh] lg:w-[100vh] h-full fill-teal-600" src="./img/bg.svg" alt="" />
+                    <div className="absolute z-[1] ml-[-10vh] w-[100vh] md:w-[80vh] lg:w-[100vh] ">
+                        <img src="./img/BG.webp" alt="" />
                     </div>
                     <div className="z-[2]">
                         <Reveal>
-                            <h1 className="font-bold font-serif">Hello,</h1>
-                            <h2 className="font-serif">I am Javier</h2>
-                            <h2 className="font-serif">Kennedi...</h2>
-                            <div className="text-xl md:text-2xl flex flex-col ">
+                            <h1 className="font-bold font-serif ">Hello,</h1>
+                            <h2 className="font-serif ">I am Javier</h2>
+                            <h2 className="font-serif ">Kennedi...</h2>
+                            <div className="text-lg md:text-2xl flex flex-col ">
                                 <p className="font-mono">My goal is to help you produce websites that</p>
                                 <p className="font-mono">responsive and uphold a high standard of quality.</p>
                             </div>
