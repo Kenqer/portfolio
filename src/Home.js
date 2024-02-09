@@ -31,7 +31,7 @@ const Home = () => {
                             </div>
                         </Reveal>
                         <div className="flex text-2xl md:text-4xl gap-4">
-                            <motion.a
+                            <motion.div
                                 variants={iconList}
                                 initial="hidd"
                                 animate="visi"
@@ -39,11 +39,11 @@ const Home = () => {
                                     delay: 0.2
                                 }}
                             >
-                                <div className="hover:scale-110 duration-300 hover:text-purple-800" href="https://www.instagram.com/ken.qer/" target="_blank">
+                                <a className="hover:scale-110 duration-300 hover:text-purple-800" href="https://www.instagram.com/ken.qer/" target="_blank">
                                     <ion-icon name="logo-instagram"></ion-icon>
-                                </div>
-                            </motion.a>
-                            <motion.a
+                                </a>
+                            </motion.div>
+                            <motion.div
                                 variants={iconList}
                                 initial="hidd"
                                 animate="visi"
@@ -51,11 +51,11 @@ const Home = () => {
                                     delay: 0.4
                                 }}
                             >
-                                <div className="hover:scale-110 duration-300 hover:text-white" href="https://www.instagram.com/ken.qer/" target="_blank">
+                                <a className="hover:scale-110 duration-300 hover:text-white" href="https://www.instagram.com/ken.qer/" target="_blank">
                                     <ion-icon name="logo-github"></ion-icon>
-                                </div>
-                            </motion.a>
-                            <motion.a
+                                </a>
+                            </motion.div>
+                            <motion.div
                                 variants={iconList}
                                 initial="hidd"
                                 animate="visi"
@@ -63,11 +63,11 @@ const Home = () => {
                                     delay: 0.6
                                 }}
                             >
-                                <div className="hover:scale-110 duration-300 hover:text-red-500" href="https://www.instagram.com/ken.qer/" target="_blank">
+                                <a className="hover:scale-110 duration-300 hover:text-red-500" href="https://www.instagram.com/ken.qer/" target="_blank">
                                     <ion-icon name="logo-youtube"></ion-icon>
-                                </div>
-                            </motion.a>
-                            <motion.a
+                                </a>
+                            </motion.div>
+                            <motion.div
                                 variants={iconList}
                                 initial="hidd"
                                 animate="visi"
@@ -75,10 +75,10 @@ const Home = () => {
                                     delay: 0.8
                                 }}
                             >
-                                <div className="hover:scale-110 duration-300 hover:text-blue-400" href="https://www.instagram.com/ken.qer/" target="_blank">
+                                <a className="hover:scale-110 duration-300 hover:text-blue-400" href="https://www.instagram.com/ken.qer/" target="_blank">
                                     <ion-icon name="logo-twitter"></ion-icon>
-                                </div>
-                            </motion.a>
+                                </a>
+                            </motion.div>
                         </div>
                     </div>
                 </div>
