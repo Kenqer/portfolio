@@ -1,9 +1,9 @@
-import Navbar from './Navbar';
-import Home from './Home';
-import About from './About';
+import Navbar from './components/Navigations/Navbar';
+import Home from './pages/Home';
+import About from './pages/About';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Footer from './Footer';
-import Contact from './Contact';
+import Footer from './components/Navigations/Footer';
+import Contact from './pages/Contact';
 
 function App() {
   return (

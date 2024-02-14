@@ -65,4 +65,48 @@ html,body {
   60% {transform: translateY(-5px);}
 }
 
+.jwaa {
+  border-radius: 49% 51% 46% 28% / 50% 68% 32% 50%;
+}
 
+.jwaa1 {
+  animation: rotate1 10s infinite;
+}
+@keyframes rotate1 {
+  0% {rotate: 0deg;}
+  30% {rotate: 90deg;}
+  70% {rotate: 180deg;}
+  100% {rotate: 360deg;}
+}
+.jwaa2 {
+  animation: rotate2 10s infinite;
+}
+@keyframes rotate2 {
+  0% {rotate: 0deg;}
+  60% {rotate: 50deg;}
+  80% {rotate: 180deg;}
+  100% {rotate: 360deg;}
+}
+.jwaa3 {
+  animation: rotate3 10s infinite;
+}
+@keyframes rotate3 {
+  0% {rotate: 0deg;}
+  20% {rotate: 40deg;}
+  40% {rotate: 80deg;}
+  50% {rotate: 120deg;}
+  60% {rotate: 180deg;}
+  80% {rotate: 270deg;}
+  100% {rotate: 360deg;}
+}
+
+.mail {
+  animation: rotatem 5s infinite;
+}
+@keyframes rotatem {
+  0% {rotate: -20deg; transform: translateY(0px);}
+  40% {transform: translateY(-10px);}
+  50% {rotate: 20deg; }
+  60% {transform: translateY(-20px);}
+  100% {rotate: -20deg; transform:  translateY(0px);}
+}
