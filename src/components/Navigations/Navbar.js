@@ -5,8 +5,8 @@ const Navbar = () => {
     let [open, setOpen] = useState(false);
     return (
         <header className="w-full">
-            <nav className="bg-transparent">
-                <div className="flex flex-row items-center justify-between">
+            <nav className="bg-transparent ">
+                <div className="flex  flex-row items-center justify-between">
                     <div className="ml-4 cursor-pointer">
                         <a href="#legoin">
                             <img className="w-20 h-full" src="./img/logo.webp" alt="" />
