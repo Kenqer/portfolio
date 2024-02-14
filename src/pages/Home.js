@@ -17,9 +17,14 @@ const Home = () => {
             <header className="home">
                 <div className="flex flex-row">
                     <div className="w-full h-[78vh] md:h-full relative overflow-hidden md:static md:overflow-visible flex flex-col gap-2 justify-center pt-[25vh] px-[10%] z-[1] text-5xl md:text-7xl ">
-                        <div className="absolute z-[1] ml-[-10vh] w-[100vh] md:w-[80vh] lg:w-[100vh] ">
+
+                        <motion.div
+                            initial={{ opacity: 0, filter: 'blur(15px)', y: 50 }}
+                            whileInView={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
+                            viewport={{ once: true, amount: 0.2 }}
+                            className="absolute z-[1] ml-[-10vh] w-[100vh] md:w-[80vh] lg:w-[100vh] ">
                             <img src="./img/BG.webp" alt="" draggable='false' />
-                        </div>
+                        </motion.div>
                         <div className="z-[2]">
                             <Reveal>
                                 <h1 className="font-bold font-serif ">Hello,</h1>
@@ -94,14 +99,6 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <div className="flex justify-center items-center h-[78vh] w-full relative overflow-hidden">
-                        <div className="jwaa jwaa1 w-[600px] bg-black h-[600px]" >
-                        </div>
-                        <div className="jwaa2 absolute jwaa w-[600px] bg-blue-600 h-[600px] rotate-[30deg]" >
-                        </div>
-                        <div className="jwaa3 absolute jwaa w-[600px] bg-red-600 h-[600px] rotate-[50deg]" >
-                        </div>
-                    </div> */}
                 </div>
             </header>
             <main className="my-[80vw] md:my-[20vw] flex flex-col gap-44">
@@ -181,79 +178,79 @@ const Home = () => {
                     </motion.div>
                 </section>
                 <Reveal>
-                <section id="skills" className="px-[10%] flex flex-col">
-                    <div className="w-full flex gap-3 ">
-                        <span className="">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-settings chip w-[4.5rem] text-fuchsia-400 hover:text-fuchsia-900 hover:scale-110 duration-300" width="4.5rem" height="4.5rem" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
-                        </span>
-                        <div className="flex flex-col">
-                            <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-400 to-pink-900 font-semibold text-5xl">Skills</h1>
-                            <p className="text-xl text-black font-mono">List</p>
+                    <section id="skills" className="px-[10%] flex flex-col">
+                        <div className="w-full flex gap-3 ">
+                            <span className="">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-settings chip w-[4.5rem] text-fuchsia-400 hover:text-fuchsia-900 hover:scale-110 duration-300" width="4.5rem" height="4.5rem" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
+                            </span>
+                            <div className="flex flex-col">
+                                <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-400 to-pink-900 font-semibold text-5xl">Skills</h1>
+                                <p className="text-xl text-black font-mono">List</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className='flex flex-col pt-[2%]'>
-                        <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
-                            <ion-icon name="language-outline"></ion-icon>
-                            Language
-                        </span>
-                        <ul className='flex flex-wrap gap-3 text-5xl py-5'>
-                            <li className='htmls'>
-                                <ion-icon name="logo-html5"></ion-icon>
-                            </li>
-                            <li className='text-sky-500'>
-                                <ion-icon name="logo-css3"></ion-icon>
-                            </li>
-                            <li className='text-purple-600'>
-                                <i className='fa-brands fa-php'></i>
-                            </li>
-                            <li className='text-yellow-400 '>
-                                <i className="fa-brands fa-js"></i>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className='flex flex-col pt-[2%]'>
-                        <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
-                            <i className="fa-solid fa-icons"></i>
-                            Frontend
-                        </span>
-                        <ul className='flex flex-wrap gap-3 text-5xl py-5'>
-                            <li>
-                                <i className="fa-brands fa-react text-sky-500"></i>
-                            </li>
-                            <li>
-                                <i><svg className='w-[50px] h-[50px] fill-blue-400' height="24" viewBox="0 0 24 24" width="34" xmlns="http://www.w3.org/2000/svg"><path d="M18.5 9.51a4.22 4.22 0 0 1-1.91-1.34A5.77 5.77 0 0 0 12 6a4.72 4.72 0 0 0-5 4 3.23 3.23 0 0 1 3.5-1.49 4.32 4.32 0 0 1 1.91 1.35A5.77 5.77 0 0 0 17 12a4.72 4.72 0 0 0 5-4 3.2 3.2 0 0 1-3.5 1.51zm-13 4.98a4.22 4.22 0 0 1 1.91 1.34A5.77 5.77 0 0 0 12 18a4.72 4.72 0 0 0 5-4 3.23 3.23 0 0 1-3.5 1.49 4.32 4.32 0 0 1-1.91-1.35A5.8 5.8 0 0 0 7 12a4.72 4.72 0 0 0-5 4 3.2 3.2 0 0 1 3.5-1.51z" /></svg></i>
-                            </li>
-                            <li className='text-purple-600'>
-                                <i className="fa-brands fa-bootstrap"></i>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className='flex flex-col pt-[2%]'>
-                        <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
-                            <i className="fa-solid fa-helmet-safety"></i>
-                            Backend
-                        </span>
-                        <ul className='flex flex-wrap gap-3 text-5xl py-5'>
-                            <li>
-                                <i className="fa-brands fa-laravel text-red-600"></i>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className='flex flex-col pt-[2%]'>
-                        <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
-                            <i className="fa-solid fa-plus"></i>
-                            Other
-                        </span>
-                        <ul className='flex flex-wrap gap-3 text-5xl py-5'>
-                            <li>
-                                <i className="fa-brands fa-aws text-red-400"></i>
-                            </li>
-                            <li>
-                                <i className="fa-brands fa-git-alt text-red-600"></i>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
+                        <div className='flex flex-col pt-[2%]'>
+                            <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
+                                <ion-icon name="language-outline"></ion-icon>
+                                Language
+                            </span>
+                            <ul className='flex flex-wrap gap-3 text-5xl py-5'>
+                                <li className='htmls'>
+                                    <ion-icon name="logo-html5"></ion-icon>
+                                </li>
+                                <li className='text-sky-500'>
+                                    <ion-icon name="logo-css3"></ion-icon>
+                                </li>
+                                <li className='text-purple-600'>
+                                    <i className='fa-brands fa-php'></i>
+                                </li>
+                                <li className='text-yellow-400 '>
+                                    <i className="fa-brands fa-js"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className='flex flex-col pt-[2%]'>
+                            <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
+                                <i className="fa-solid fa-icons"></i>
+                                Frontend
+                            </span>
+                            <ul className='flex flex-wrap gap-3 text-5xl py-5'>
+                                <li>
+                                    <i className="fa-brands fa-react text-sky-500"></i>
+                                </li>
+                                <li>
+                                    <i><svg className='w-[50px] h-[50px] fill-blue-400' height="24" viewBox="0 0 24 24" width="34" xmlns="http://www.w3.org/2000/svg"><path d="M18.5 9.51a4.22 4.22 0 0 1-1.91-1.34A5.77 5.77 0 0 0 12 6a4.72 4.72 0 0 0-5 4 3.23 3.23 0 0 1 3.5-1.49 4.32 4.32 0 0 1 1.91 1.35A5.77 5.77 0 0 0 17 12a4.72 4.72 0 0 0 5-4 3.2 3.2 0 0 1-3.5 1.51zm-13 4.98a4.22 4.22 0 0 1 1.91 1.34A5.77 5.77 0 0 0 12 18a4.72 4.72 0 0 0 5-4 3.23 3.23 0 0 1-3.5 1.49 4.32 4.32 0 0 1-1.91-1.35A5.8 5.8 0 0 0 7 12a4.72 4.72 0 0 0-5 4 3.2 3.2 0 0 1 3.5-1.51z" /></svg></i>
+                                </li>
+                                <li className='text-purple-600'>
+                                    <i className="fa-brands fa-bootstrap"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className='flex flex-col pt-[2%]'>
+                            <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
+                                <i className="fa-solid fa-helmet-safety"></i>
+                                Backend
+                            </span>
+                            <ul className='flex flex-wrap gap-3 text-5xl py-5'>
+                                <li>
+                                    <i className="fa-brands fa-laravel text-red-600"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className='flex flex-col pt-[2%]'>
+                            <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
+                                <i className="fa-solid fa-plus"></i>
+                                Other
+                            </span>
+                            <ul className='flex flex-wrap gap-3 text-5xl py-5'>
+                                <li>
+                                    <i className="fa-brands fa-aws text-red-400"></i>
+                                </li>
+                                <li>
+                                    <i className="fa-brands fa-git-alt text-red-600"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
                 </Reveal>
                 <section id="project" className="px-[10%] flex flex-col">
                     <div className="w-full flex">

@@ -1,12 +1,20 @@
+import { motion, useInView, useAnimation, spring } from "framer-motion"
 
 const About = () => {
     return (
         <section className="about">
             <header className="home">
                 <div className="w-full h-full flex flex-col-reverse gap-2 justify-center pt-[25vh] px-[10%] z-[1] text-5xl md:text-7xl md:flex-row">
-                    <div className='relative md:w-[500px] flex justify-center '>
-                        <img src="img/city.png" alt="car" />
-                    </div>
+                    <motion.div
+                        initial={{ opacity: 0, filter: 'blur(15px)', y: 50 }}
+                        whileInView={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
+                        viewport={{ once: true, amount: 0.2 }}
+                    >
+                        <div className='relative md:w-[500px] flex justify-center '>
+                            <img src="img/city.png" alt="car" />
+                        </div>
+                    </motion.div>
+
                     <div className='w-full md:w-1/2 flex flex-col gap-7 z-[2] '>
                         <div className="w-1/2 md:w-full ">
                             <div className="flex flex-col">
