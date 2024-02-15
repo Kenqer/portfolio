@@ -19,21 +19,21 @@ const Navbar = () => {
                             <Link to="/">
                                 <li className="flex flex-col group">
                                     <span className="text-xl font-semibold hover:text-teal-600 cursor-pointer group-hover:scale-105 duration-200 z-[2]">Home</span>
-                                    <span className="w-full  border-b-[5px] rounded-b-md border-teal-600 scale-0 group-hover:scale-110 duration-200">
+                                    <span className="md:w-full w-40 border-b-[5px] rounded-b-md border-teal-600 scale-0 group-hover:scale-110 duration-200">
                                     </span>
                                 </li>
                             </Link>
                             <Link to="/about">
                                 <li className="flex flex-col group">
                                     <span className="text-xl font-semibold hover:text-teal-600 cursor-pointer group-hover:scale-105 duration-200 z-[2]">About</span>
-                                    <span className="w-full  border-b-[5px] rounded-b-md border-teal-600 scale-0 group-hover:scale-110 duration-200">
+                                    <span className="md:w-full w-40 border-b-[5px] rounded-b-md border-teal-600 scale-0 group-hover:scale-110 duration-200">
                                     </span>
                                 </li>
                             </Link>
                             <Link to="/contact">
                                 <li className="flex flex-col group">
                                     <span className="text-xl font-semibold hover:text-teal-600 cursor-pointer group-hover:scale-105 duration-200 z-[2]">Contact</span>
-                                    <span className="w-full  border-b-[5px] rounded-b-md border-teal-600 scale-0 group-hover:scale-110 duration-200">
+                                    <span className="md:w-full w-40 border-b-[5px] rounded-b-md border-teal-600 scale-0 group-hover:scale-110 duration-200">
                                     </span>
                                 </li>
                             </Link>

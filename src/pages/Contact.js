@@ -1,7 +1,6 @@
 import emailjs from '@emailjs/browser';
 import React, { useRef } from "react";
 import { motion, useInView, useAnimation, spring } from "framer-motion"
-import Reveal from "../components/utils/Reveal";
 
 const Contact = () => {
     const iconList = {
@@ -25,7 +24,7 @@ const Contact = () => {
             })
             .then(
                 () => {
-                    alert('SUCCESS!');
+                    window.location.replace(window.location.href)
                 },
                 (error) => {
                     alert('FAILED...', error.text);
