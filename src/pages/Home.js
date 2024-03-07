@@ -1,5 +1,6 @@
 import { motion, useInView, useAnimation, spring } from "framer-motion"
 import Reveal from "../components/utils/Reveal";
+import {SiAmazonaws, SiAndroid, SiAndroidstudio, SiChakraui, SiCpanel, SiExpo, SiExpress, SiFramer, SiGit, SiGithubpages, SiMongodb, SiMysql, SiPython, SiReact, SiTailwindcss, SiVercel} from 'react-icons/si'
 
 const Home = () => {
     const iconList = {
@@ -123,7 +124,7 @@ const Home = () => {
                             <div className="w-full h-auto group cursor-pointer border hover:border-b-8 hover:border-b-teal-600 hover:rounded-b-2xl rounded-xl flex flex-col relative px-3 pt-3 hover:scale-[103%] duration-200 shadow-lg">
                                 <a target='_blank' href="https://drive.google.com/drive/folders/1h7UUQpPJU86a8QRKQmEy3JAWzOaE3nHt?usp=drive_link">
                                     <div className="">
-                                        <img className="aspect-[16/11.25] w-full h-fit" src="./img/seameo.webp" alt="jawa" />
+                                        <img className="aspect-[16/11.25]" src="./img/seameo.webp" alt="jawa" />
                                     </div>
                                     <div className='px-1 py-4'>
                                         <div className='text-lg font-mono flex justify-between'>
@@ -137,7 +138,7 @@ const Home = () => {
                             <div className="w-full h-auto cursor-pointer border rounded-xl hover:border-b-8 hover:border-b-teal-600 hover:rounded-b-2xl flex flex-col relative px-3 pt-3  hover:scale-[103%] duration-200 shadow-lg">
                                 <a target="_blank" href="https://www.w3docs.com/quiz/certificate/3/100/1704877126/Javier%20Kennedi/b5bef9956d838ff3e475f2ae3fe38799">
                                     <div className="">
-                                        <img className="aspect-[16/11.25] w-full h-fit" src="img/c2.webp" alt="jawa" />
+                                        <img className="aspect-[16/11.25]" src="img/c2.webp" alt="jawa" />
                                     </div>
                                     <div className='px-1 py-4'>
                                         <div className='text-lg font-mono flex justify-between'>
@@ -150,7 +151,7 @@ const Home = () => {
                             </div>
                             <div className="w-full h-auto cursor-pointer border rounded-xl hover:border-b-8 hover:border-b-teal-600 hover:rounded-b-2xl flex flex-col relative px-3 pt-3  hover:scale-[103%] duration-200 shadow-lg">
                                 <a target='_blank' href="https://www.w3docs.com/quiz/certificate/2/100/1704879442/Javier%20Kennedi/337cc6f88702cc7fe2a7a07a69c8338f">
-                                    <img className="aspect-[16/11.25] w-full h-fit" src="img/c4.webp" alt="jawa" />
+                                    <img className="aspect-[16/11.25]" src="img/c4.webp" alt="jawa" />
                                     <div className='px-1 py-4'>
                                         <div className='text-lg font-mono flex justify-between'>
                                             <em>Non-Academy</em>
@@ -162,7 +163,7 @@ const Home = () => {
                             </div>
                             <div className="w-full h-auto cursor-pointer border  rounded-xl hover:border-b-8 hover:border-b-teal-600 hover:rounded-b-2xl flex flex-col relative px-3 pt-3  hover:scale-[103%] duration-200 shadow-lg">
                                 <a target='_blank' href="https://www.w3docs.com/quiz/certificate/5/100/1704876717/Javier%20Kennedi/32ea25c2344d1bbf5f256bfc5a63c359">
-                                    <img className="aspect-[16/11.25] w-full h-fit" src="/img/c3.webp" alt="jawa" />
+                                    <img className="aspect-[16/11.25]" src="/img/c3.webp" alt="jawa" />
                                     <div className='px-1 py-4'>
                                         <div className='text-lg font-mono flex justify-between'>
                                             <em>Non-Academy</em>
@@ -193,7 +194,7 @@ const Home = () => {
                                 <ion-icon name="language-outline"></ion-icon>
                                 Language
                             </span>
-                            <ul className='flex flex-wrap gap-3 text-5xl py-5'>
+                            <ul className='flex flex-wrap gap-4 text-5xl py-5'>
                                 <li className='htmls'>
                                     <ion-icon name="logo-html5"></ion-icon>
                                 </li>
@@ -206,6 +207,9 @@ const Home = () => {
                                 <li className='text-yellow-400 '>
                                     <i className="fa-brands fa-js"></i>
                                 </li>
+                                <li className='text-yellow-500 '>
+                                    <SiPython className=""></SiPython>
+                                </li>
                             </ul>
                         </div>
                         <div className='flex flex-col pt-[2%]'>
@@ -213,15 +217,21 @@ const Home = () => {
                                 <i className="fa-solid fa-icons"></i>
                                 Frontend
                             </span>
-                            <ul className='flex flex-wrap gap-3 text-5xl py-5'>
+                            <ul className='flex flex-wrap gap-4 text-5xl py-5'>
                                 <li>
-                                    <i className="fa-brands fa-react text-sky-500"></i>
+                                    <SiReact className="text-sky-500"></SiReact>
                                 </li>
                                 <li>
-                                    <i><svg className='w-[50px] h-[50px] fill-blue-400' height="24" viewBox="0 0 24 24" width="34" xmlns="http://www.w3.org/2000/svg"><path d="M18.5 9.51a4.22 4.22 0 0 1-1.91-1.34A5.77 5.77 0 0 0 12 6a4.72 4.72 0 0 0-5 4 3.23 3.23 0 0 1 3.5-1.49 4.32 4.32 0 0 1 1.91 1.35A5.77 5.77 0 0 0 17 12a4.72 4.72 0 0 0 5-4 3.2 3.2 0 0 1-3.5 1.51zm-13 4.98a4.22 4.22 0 0 1 1.91 1.34A5.77 5.77 0 0 0 12 18a4.72 4.72 0 0 0 5-4 3.23 3.23 0 0 1-3.5 1.49 4.32 4.32 0 0 1-1.91-1.35A5.8 5.8 0 0 0 7 12a4.72 4.72 0 0 0-5 4 3.2 3.2 0 0 1 3.5-1.51z" /></svg></i>
+                                    <SiTailwindcss className="text-sky-400"></SiTailwindcss>
                                 </li>
                                 <li className='text-purple-600'>
                                     <i className="fa-brands fa-bootstrap"></i>
+                                </li>
+                                <li>
+                                    <SiFramer className=""></SiFramer>
+                                </li>
+                                <li>
+                                    <SiChakraui className="text-green-300"></SiChakraui>
                                 </li>
                             </ul>
                         </div>
@@ -230,9 +240,36 @@ const Home = () => {
                                 <i className="fa-solid fa-helmet-safety"></i>
                                 Backend
                             </span>
-                            <ul className='flex flex-wrap gap-3 text-5xl py-5'>
+                            <ul className='flex flex-wrap gap-4 text-5xl py-5 items-center'>
                                 <li>
                                     <i className="fa-brands fa-laravel text-red-600"></i>
+                                </li>
+                                <li>
+                                    <SiMongodb className="fa-brands fa-laravel text-green-600"></SiMongodb>
+                                </li>
+                                <li>
+                                    <SiMysql className="fa-brands fa-laravel text-orange-400"></SiMysql>
+                                </li>
+                                <li>
+                                    <SiExpress className="fa-brands fa-laravel text-black"></SiExpress>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className='flex flex-col pt-[2%]'>
+                            <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
+                                <SiAndroid className="fa-solid fa-helmet-safety"></SiAndroid>
+                                Mobile
+                            </span>
+                            <ul className='flex flex-wrap gap-4  py-5 items-center'>
+                                <li>
+                                    <SiAndroidstudio className="text-5xl text-green-400"></SiAndroidstudio>
+                                </li>
+                                <li>
+                                    <SiExpo className="text-5xl text-slate-700"></SiExpo>
+                                </li>
+                                <li className="flex flex-col items-center justify-center">
+                                    <SiReact className="text-4xl text-sky-400"></SiReact>
+                                    <span className="text-sm font-[jawa] font-bold text-sky-400">Native</span>
                                 </li>
                             </ul>
                         </div>
@@ -241,12 +278,21 @@ const Home = () => {
                                 <i className="fa-solid fa-plus"></i>
                                 Other
                             </span>
-                            <ul className='flex flex-wrap gap-3 text-5xl py-5'>
+                            <ul className='flex flex-wrap gap-4 py-5 items-center'>
                                 <li>
-                                    <i className="fa-brands fa-aws text-red-400"></i>
+                                    <SiAmazonaws className="text-5xl  text-red-400"></SiAmazonaws>
                                 </li>
                                 <li>
-                                    <i className="fa-brands fa-git-alt text-red-600"></i>
+                                    <SiGit className="text-5xl text-red-600"></SiGit>
+                                </li>
+                                <li>
+                                    <SiCpanel className="text-6xl text-blue-600"></SiCpanel>
+                                </li>
+                                <li className=" bg-black rounded-full flex items-center">
+                                    <SiVercel className="text-5xl text-white p-2"></SiVercel>
+                                </li>
+                                <li className="">
+                                    <SiGithubpages className="text-6xl text-black"></SiGithubpages>
                                 </li>
                             </ul>
                         </div>
