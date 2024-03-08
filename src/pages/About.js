@@ -125,7 +125,7 @@ const About = () => {
                                             type: 'spring'
                                         }}
                                     >
-                                        <a className="hover:scale-110 duration-300 hover:text-sky-400" href="https://twitter.com/itisnotken" target="_blank">
+                                        <a className="hover:scale-110 duration-300 hover:text-sky-400" href="https://www.freelancer.com/u/JavierKennedi" target="_blank">
                                             <SiFreelancer></SiFreelancer>
                                         </a>
                                     </motion.div>
