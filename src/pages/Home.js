@@ -61,7 +61,7 @@ const Home = () => {
                                         type: 'spring'
                                     }}
                                 >
-                                    <a className="hover:scale-110 duration-300 hover:text-white" href="https://www.instagram.com/ken.qer/" target="_blank">
+                                    <a className="hover:scale-110 duration-300 hover:text-white" href="https://github.com/Kenqer" target="_blank">
                                         <ion-icon name="logo-github"></ion-icon>
                                     </a>
                                 </motion.div>
@@ -76,7 +76,7 @@ const Home = () => {
                                         type: 'spring'
                                     }}
                                 >
-                                    <a className="hover:scale-110 duration-300 hover:text-red-500" href="https://www.instagram.com/ken.qer/" target="_blank">
+                                    <a className="hover:scale-110 duration-300 hover:text-red-500" href="https://www.youtube.com/channel/UCXG6GuBh1oHQaYM6TQ7-NRw" target="_blank">
                                         <ion-icon name="logo-youtube"></ion-icon>
                                     </a>
                                 </motion.div>
@@ -91,7 +91,7 @@ const Home = () => {
                                         type: 'spring'
                                     }}
                                 >
-                                    <a className="hover:scale-110 duration-300 hover:text-blue-400" href="https://www.instagram.com/ken.qer/" target="_blank">
+                                    <a className="hover:scale-110 duration-300 hover:text-blue-400" href="https://twitter.com/itisnotken" target="_blank">
                                         <ion-icon name="logo-twitter"></ion-icon>
                                     </a>
                                 </motion.div>
