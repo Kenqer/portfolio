@@ -1,6 +1,8 @@
 import { motion, useInView, useAnimation, spring } from "framer-motion"
 import Reveal from "../components/utils/Reveal";
-import {SiAmazonaws, SiAndroid, SiAndroidstudio, SiChakraui, SiCpanel, SiExpo, SiExpress, SiFramer, SiGit, SiGithubpages, SiMongodb, SiMysql, SiPython, SiReact, SiTailwindcss, SiVercel} from 'react-icons/si'
+import { SiAmazonaws, SiAndroid, SiAndroidstudio, SiChakraui, SiCpanel, SiExpo, SiExpress, SiFramer, SiGit, SiGithubpages, SiMongodb, SiMysql, SiPython, SiReact, SiTailwindcss, SiVercel } from 'react-icons/si'
+import * as LottiePlayer from "@lottiefiles/lottie-player";
+import { Tooltip } from '@chakra-ui/react'
 
 const Home = () => {
     const iconList = {
@@ -16,24 +18,20 @@ const Home = () => {
     return (
         <div>
             <header className="home">
-                <div className="flex flex-row">
-                    <div className="w-full h-[78vh] md:h-full relative overflow-hidden md:static md:overflow-visible flex flex-col gap-2 justify-center pt-[25vh] px-[10%] z-[1] text-5xl md:text-7xl ">
+                <div className="flex md:flex-row flex-col ">
+                    <div className="md:w-1/2 w-full h-full mt-10 md:mt-0 md:h-full relative overflow-hidden md:static md:overflow-visible flex flex-col gap-2 justify-center md:pt-[25vh] px-[10%] z-[1] text-5xl md:text-7xl ">
 
-                        <motion.div
-                            initial={{ opacity: 0, filter: 'blur(15px)', y: 50 }}
-                            whileInView={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
-                            viewport={{ once: true, amount: 0.2 }}
+                        {/* <motion.div
                             className="absolute z-[1] ml-[-10vh] w-[100vh] md:w-[80vh] lg:w-[100vh] ">
                             <img src="./img/BG.webp" alt="" draggable='false' />
-                        </motion.div>
+                        </motion.div> */}
                         <div className="z-[2]">
                             <Reveal>
                                 <h1 className="font-bold font-serif ">Hello,</h1>
                                 <h2 className="font-serif ">I'm Javier</h2>
                                 <h2 className="font-serif ">Kennedi...</h2>
                                 <div className="text-lg md:text-2xl flex flex-col ">
-                                    <p className="font-mono">My goal is to help you produce websites that</p>
-                                    <p className="font-mono">responsive and uphold a high standard of quality.</p>
+                                    <p className="font-mono">My goal is to help you produce websites that responsive and uphold a high standard of quality.</p>
                                 </div>
                             </Reveal>
                             <div className="flex text-2xl md:text-4xl gap-4">
@@ -100,6 +98,20 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
+                    <motion.div
+                        initial={{ opacity: 0, filter: 'blur(15px)', y: 50 }}
+                        whileInView={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
+                        viewport={{ once: true, amount: 0.2 }}
+                        transition={{ duration: 1.2 }}
+                        className="md:w-1/2 static w-full z-[1] blur-sm md:blur-none">
+                        <lottie-player
+                            autoplay
+                            loop
+                            mode="normal"
+                            src="https://lottie.host/5e562d08-18f9-47fa-8502-371b492c0d25/C3FhCBBp0F.json"
+                            className="w-20 h-20"
+                        ></lottie-player>
+                    </motion.div>
                 </div>
             </header>
             <main className="my-[80vw] md:my-[20vw] flex flex-col gap-44">
@@ -179,122 +191,208 @@ const Home = () => {
                     </motion.div>
                 </section>
                 <Reveal>
-                    <section id="skills" className="px-[10%] flex flex-col">
-                        <div className="w-full flex gap-3 ">
-                            <span className="">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-settings chip w-[4.5rem] text-fuchsia-400 hover:text-fuchsia-900 hover:scale-110 duration-300" width="4.5rem" height="4.5rem" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
-                            </span>
-                            <div className="flex flex-col">
-                                <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-400 to-pink-900 font-semibold text-5xl">Skills</h1>
-                                <p className="text-xl text-black font-mono">List</p>
+                    <section id="skills" className="md:px-[10%] flex flex-row md:justify-between items-center">
+                        <div className="flex flex-col md:w-1/2 w-full z-[2] px-[10%] md:px-0">
+                            <div className="w-full flex gap-3 ">
+                                <span className="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-settings chip w-[4.5rem] text-fuchsia-400 hover:text-fuchsia-900 hover:scale-110 duration-300" width="4.5rem" height="4.5rem" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
+                                </span>
+                                <div className="flex flex-col">
+                                    <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-400 to-pink-900 font-semibold text-5xl">Skills</h1>
+                                    <p className="text-xl text-black font-mono">List</p>
+                                </div>
+                            </div>
+                            <div className='flex flex-col pt-[2%]'>
+                                <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
+                                    <ion-icon name="language-outline"></ion-icon>
+                                    Language
+                                </span>
+                                <ul className='flex flex-wrap gap-4 text-5xl py-5'>
+                                    <li className='htmls'>
+                                        <Tooltip label="HTML5" hasArrow>
+                                            <ion-icon name="logo-html5"></ion-icon>
+                                        </Tooltip>
+                                    </li>
+                                    <li className='text-sky-500'>
+                                        <Tooltip label="CSS3" hasArrow>
+                                            <ion-icon name="logo-css3"></ion-icon>
+                                        </Tooltip>
+                                    </li>
+                                    <li className='text-purple-600'>
+                                        <Tooltip label="PHP" hasArrow>
+                                            <i className='fa-brands fa-php'></i>
+                                        </Tooltip>
+                                    </li>
+                                    <li className='text-yellow-400 '>
+                                        <Tooltip hasArrow label="Javascript">
+                                            <i className="fa-brands fa-js"></i>
+                                        </Tooltip>
+                                    </li>
+                                    <li className='text-yellow-500 '>
+                                        <Tooltip label="Python" hasArrow>
+                                            <span>
+                                                <SiPython className=""></SiPython>
+                                            </span>
+                                        </Tooltip>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className='flex flex-col pt-[2%]'>
+                                <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
+                                    <i className="fa-solid fa-icons"></i>
+                                    Frontend
+                                </span>
+                                <ul className='flex flex-wrap gap-4 text-5xl py-5'>
+                                    <li>
+                                        <Tooltip label="React JS" hasArrow>
+                                            <span>
+                                                <SiReact className="text-sky-500"></SiReact>
+                                            </span>
+                                        </Tooltip>
+                                    </li>
+                                    <li>
+                                        <Tooltip label="TailwindCSS" hasArrow>
+                                            <span>
+                                                <SiTailwindcss className="text-sky-400"></SiTailwindcss>
+                                            </span>
+                                        </Tooltip>
+                                    </li>
+                                    <li className='text-purple-600'>
+                                        <Tooltip label="Bootstrap" hasArrow>
+                                            <i className="fa-brands fa-bootstrap"></i>
+                                        </Tooltip>
+                                    </li>
+                                    <li>
+                                        <Tooltip label='Framer Motion' hasArrow>
+                                            <span>
+                                                <SiFramer className=""></SiFramer>
+                                            </span>
+                                        </Tooltip>
+                                    </li>
+                                    <li>
+                                        <Tooltip label='Chakra UI' hasArrow>
+                                            <span>
+                                                <SiChakraui className="text-green-300"></SiChakraui>
+                                            </span>
+                                        </Tooltip>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className='flex flex-col pt-[2%]'>
+                                <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
+                                    <i className="fa-solid fa-helmet-safety"></i>
+                                    Backend
+                                </span>
+                                <ul className='flex flex-wrap gap-4 text-5xl py-5 items-center'>
+                                    <li>
+                                        <Tooltip label='Laravel' hasArrow>
+                                            <i className="fa-brands fa-laravel text-red-600"></i>
+                                        </Tooltip>
+                                    </li>
+                                    <li>
+                                        <Tooltip label="MongoDB" hasArrow>
+                                            <span>
+                                                <SiMongodb className="fa-brands fa-laravel text-green-600"></SiMongodb>
+                                            </span>
+                                        </Tooltip>
+                                    </li>
+                                    <li>
+                                        <Tooltip label="MySQL" hasArrow>
+                                            <span>
+                                                <SiMysql className="fa-brands fa-laravel text-orange-400"></SiMysql>
+                                            </span>
+                                        </Tooltip>
+                                    </li>
+                                    <li>
+                                        <Tooltip label="Express JS" hasArrow>
+                                            <span>
+                                                <SiExpress className="fa-brands fa-laravel text-black"></SiExpress>
+                                            </span>
+                                        </Tooltip>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className='flex flex-col pt-[2%]'>
+                                <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
+                                    <SiAndroid className="fa-solid fa-helmet-safety"></SiAndroid>
+                                    Mobile
+                                </span>
+                                <ul className='flex flex-wrap gap-4  py-5 items-center'>
+                                    <li>
+                                        <Tooltip label="Android Studio" hasArrow>
+                                            <span>
+                                                <SiAndroidstudio className="text-5xl text-green-400"></SiAndroidstudio>                                            </span>
+                                        </Tooltip>
+                                    </li>
+                                    <li>
+                                        <Tooltip label="Expo" hasArrow>
+                                            <span>
+                                                <SiExpo className="text-5xl text-slate-700"></SiExpo>
+                                            </span>
+                                        </Tooltip>
+                                    </li>
+                                    <li className="flex flex-col items-center justify-center">
+                                        <Tooltip label="React Native" hasArrow>
+                                            <span>
+                                                <SiReact className="text-4xl text-sky-400"></SiReact>
+                                                <span className="text-sm font-[jawa] font-bold text-sky-400">Native</span>
+                                            </span>
+                                        </Tooltip>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className='flex flex-col pt-[2%]'>
+                                <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
+                                    <i className="fa-solid fa-plus"></i>
+                                    Other
+                                </span>
+                                <ul className='flex flex-wrap gap-4 py-5 items-center'>
+                                    <li>
+                                        <Tooltip label='AWS' hasArrow>
+                                            <span>
+                                                <SiAmazonaws className="text-5xl  text-red-400"></SiAmazonaws>
+                                            </span>
+                                        </Tooltip>
+                                    </li>
+                                    <li>
+                                        <Tooltip label="Git">
+                                            <span>
+                                                <SiGit className="text-5xl text-red-600"></SiGit>
+                                            </span>
+                                        </Tooltip>
+                                    </li>
+                                    <li>
+                                        <Tooltip label="cPanel" hasArrow>
+                                            <span>
+                                                <SiCpanel className="text-6xl text-blue-600"></SiCpanel>
+                                            </span>
+                                        </Tooltip>
+                                    </li>
+                                    <li className=" bg-black rounded-full flex items-center">
+                                        <Tooltip label="Vercel" hasArrow>
+                                            <span>
+                                                <SiVercel className="text-5xl text-white p-2"></SiVercel>
+                                            </span>
+                                        </Tooltip>
+                                    </li>
+                                    <li className="">
+                                        <Tooltip label='Github Pages' hasArrow>
+                                            <span>
+                                                <SiGithubpages className="text-6xl text-black"></SiGithubpages>
+                                            </span>
+                                        </Tooltip>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div className='flex flex-col pt-[2%]'>
-                            <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
-                                <ion-icon name="language-outline"></ion-icon>
-                                Language
-                            </span>
-                            <ul className='flex flex-wrap gap-4 text-5xl py-5'>
-                                <li className='htmls'>
-                                    <ion-icon name="logo-html5"></ion-icon>
-                                </li>
-                                <li className='text-sky-500'>
-                                    <ion-icon name="logo-css3"></ion-icon>
-                                </li>
-                                <li className='text-purple-600'>
-                                    <i className='fa-brands fa-php'></i>
-                                </li>
-                                <li className='text-yellow-400 '>
-                                    <i className="fa-brands fa-js"></i>
-                                </li>
-                                <li className='text-yellow-500 '>
-                                    <SiPython className=""></SiPython>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className='flex flex-col pt-[2%]'>
-                            <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
-                                <i className="fa-solid fa-icons"></i>
-                                Frontend
-                            </span>
-                            <ul className='flex flex-wrap gap-4 text-5xl py-5'>
-                                <li>
-                                    <SiReact className="text-sky-500"></SiReact>
-                                </li>
-                                <li>
-                                    <SiTailwindcss className="text-sky-400"></SiTailwindcss>
-                                </li>
-                                <li className='text-purple-600'>
-                                    <i className="fa-brands fa-bootstrap"></i>
-                                </li>
-                                <li>
-                                    <SiFramer className=""></SiFramer>
-                                </li>
-                                <li>
-                                    <SiChakraui className="text-green-300"></SiChakraui>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className='flex flex-col pt-[2%]'>
-                            <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
-                                <i className="fa-solid fa-helmet-safety"></i>
-                                Backend
-                            </span>
-                            <ul className='flex flex-wrap gap-4 text-5xl py-5 items-center'>
-                                <li>
-                                    <i className="fa-brands fa-laravel text-red-600"></i>
-                                </li>
-                                <li>
-                                    <SiMongodb className="fa-brands fa-laravel text-green-600"></SiMongodb>
-                                </li>
-                                <li>
-                                    <SiMysql className="fa-brands fa-laravel text-orange-400"></SiMysql>
-                                </li>
-                                <li>
-                                    <SiExpress className="fa-brands fa-laravel text-black"></SiExpress>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className='flex flex-col pt-[2%]'>
-                            <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
-                                <SiAndroid className="fa-solid fa-helmet-safety"></SiAndroid>
-                                Mobile
-                            </span>
-                            <ul className='flex flex-wrap gap-4  py-5 items-center'>
-                                <li>
-                                    <SiAndroidstudio className="text-5xl text-green-400"></SiAndroidstudio>
-                                </li>
-                                <li>
-                                    <SiExpo className="text-5xl text-slate-700"></SiExpo>
-                                </li>
-                                <li className="flex flex-col items-center justify-center">
-                                    <SiReact className="text-4xl text-sky-400"></SiReact>
-                                    <span className="text-sm font-[jawa] font-bold text-sky-400">Native</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className='flex flex-col pt-[2%]'>
-                            <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
-                                <i className="fa-solid fa-plus"></i>
-                                Other
-                            </span>
-                            <ul className='flex flex-wrap gap-4 py-5 items-center'>
-                                <li>
-                                    <SiAmazonaws className="text-5xl  text-red-400"></SiAmazonaws>
-                                </li>
-                                <li>
-                                    <SiGit className="text-5xl text-red-600"></SiGit>
-                                </li>
-                                <li>
-                                    <SiCpanel className="text-6xl text-blue-600"></SiCpanel>
-                                </li>
-                                <li className=" bg-black rounded-full flex items-center">
-                                    <SiVercel className="text-5xl text-white p-2"></SiVercel>
-                                </li>
-                                <li className="">
-                                    <SiGithubpages className="text-6xl text-black"></SiGithubpages>
-                                </li>
-                            </ul>
+                        <div className="md:w-1/2 absolute md:static w-full z-[1] blur-sm md:blur-none">
+                            <lottie-player
+                                autoplay
+                                loop
+                                mode="normal"
+                                src="https://lottie.host/6dec9da8-de4b-44f1-bb9c-1ca95d70fb59/5H2I83WxU9.json"
+                                className="w-20 h-20"
+                            ></lottie-player>
                         </div>
                     </section>
                 </Reveal>
