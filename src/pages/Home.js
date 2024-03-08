@@ -1,6 +1,6 @@
 import { motion, useInView, useAnimation, spring } from "framer-motion"
 import Reveal from "../components/utils/Reveal";
-import { SiAmazonaws, SiAndroid, SiAndroidstudio, SiChakraui, SiCpanel, SiExpo, SiExpress, SiFramer, SiGit, SiGithubpages, SiMongodb, SiMysql, SiPython, SiReact, SiTailwindcss, SiVercel } from 'react-icons/si'
+import { SiAmazonaws, SiAndroid, SiAndroidstudio, SiChakraui, SiCpanel, SiExpo, SiExpress, SiFramer, SiFreelancer, SiGit, SiGithub, SiGithubpages, SiInstagram, SiLinkedin, SiMongodb, SiMysql, SiPython, SiReact, SiTailwindcss, SiTwitter, SiVercel, SiYoutube } from 'react-icons/si'
 import * as LottiePlayer from "@lottiefiles/lottie-player";
 import { Tooltip } from '@chakra-ui/react'
 
@@ -34,7 +34,7 @@ const Home = () => {
                                     <p className="font-mono">My goal is to help you produce websites that responsive and uphold a high standard of quality.</p>
                                 </div>
                             </Reveal>
-                            <div className="flex text-2xl md:text-4xl gap-4">
+                            <div className="flex text-2xl md:text-4xl gap-4 items-center">
                                 <motion.div
                                     variants={iconList}
                                     initial="hidd"
@@ -47,7 +47,7 @@ const Home = () => {
                                     }}
                                 >
                                     <a className="hover:scale-110 duration-300 hover:text-purple-800" href="https://www.instagram.com/ken.qer/" target="_blank">
-                                        <ion-icon name="logo-instagram"></ion-icon>
+                                        <SiInstagram></SiInstagram>
                                     </a>
                                 </motion.div>
                                 <motion.div
@@ -61,8 +61,8 @@ const Home = () => {
                                         type: 'spring'
                                     }}
                                 >
-                                    <a className="hover:scale-110 duration-300 hover:text-white" href="https://github.com/Kenqer" target="_blank">
-                                        <ion-icon name="logo-github"></ion-icon>
+                                    <a className="hover:scale-110 duration-300 hover:text-gray-500" href="https://github.com/Kenqer" target="_blank">
+                                        <SiGithub></SiGithub>
                                     </a>
                                 </motion.div>
                                 <motion.div
@@ -77,7 +77,7 @@ const Home = () => {
                                     }}
                                 >
                                     <a className="hover:scale-110 duration-300 hover:text-red-500" href="https://www.youtube.com/channel/UCXG6GuBh1oHQaYM6TQ7-NRw" target="_blank">
-                                        <ion-icon name="logo-youtube"></ion-icon>
+                                        <SiYoutube></SiYoutube>
                                     </a>
                                 </motion.div>
                                 <motion.div
@@ -91,10 +91,41 @@ const Home = () => {
                                         type: 'spring'
                                     }}
                                 >
-                                    <a className="hover:scale-110 duration-300 hover:text-blue-400" href="https://twitter.com/itisnotken" target="_blank">
-                                        <ion-icon name="logo-twitter"></ion-icon>
+                                    <a className="hover:scale-110 duration-300 hover:text-blue-900" href="https://www.linkedin.com/in/javier-kennedi-9bb6342aa/" target="_blank">
+                                        <SiLinkedin></SiLinkedin>
                                     </a>
                                 </motion.div>
+                                <motion.div
+                                    variants={iconList}
+                                    initial="hidd"
+                                    animate="visi"
+                                    transition={{
+                                        delay: 1,
+                                        duration: 1,
+                                        bounce: 0.55,
+                                        type: 'spring'
+                                    }}
+                                >
+                                    <a className="hover:scale-110 duration-300 hover:text-blue-400" href="https://twitter.com/itisnotken" target="_blank">
+                                        <SiTwitter></SiTwitter>
+                                    </a>
+                                </motion.div>
+                                <motion.div
+                                    variants={iconList}
+                                    initial="hidd"
+                                    animate="visi"
+                                    transition={{
+                                        delay: 1.2,
+                                        duration: 1,
+                                        bounce: 0.55,
+                                        type: 'spring'
+                                    }}
+                                >
+                                    <a className="hover:scale-110 duration-300 hover:text-sky-400" href="https://twitter.com/itisnotken" target="_blank">
+                                        <SiFreelancer></SiFreelancer>
+                                    </a>
+                                </motion.div>
+                                
                             </div>
                         </div>
                     </div>

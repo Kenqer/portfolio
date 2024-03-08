@@ -1,6 +1,9 @@
 import emailjs from '@emailjs/browser';
 import React, { useRef } from "react";
 import { motion, useInView, useAnimation, spring } from "framer-motion"
+import * as LottiePlayer from "@lottiefiles/lottie-player";
+import { SiAmazonaws, SiAndroid, SiAndroidstudio, SiChakraui, SiCpanel, SiExpo, SiExpress, SiFramer, SiFreelancer, SiGit, SiGithub, SiGithubpages, SiInstagram, SiLinkedin, SiMongodb, SiMysql, SiPython, SiReact, SiTailwindcss, SiTwitter, SiVercel, SiYoutube } from 'react-icons/si'
+
 
 const Contact = () => {
     const iconList = {
@@ -34,7 +37,7 @@ const Contact = () => {
 
     return (
         <main className='w-full h-screen'>
-            <div className='w-full h-full flex justify-center lg:flex-row md:flex-col-reverse flex-col-reverse overflow-hidden'>
+            <div className='w-full h-full flex justify-center items-center lg:flex-row md:flex-col-reverse flex-col-reverse overflow-hidden'>
                 <form ref={form} onSubmit={sendEmail} className='flex flex-row justify-center absolute md:absolute lg:static items-center z-[2] w-full h-full overflow-hidden'>
                     <div className='px-20 pt-10 pb-20 z-[2]'>
                         <div className='flex flex-col gap-4'>
@@ -76,7 +79,7 @@ const Contact = () => {
                                         }}
                                     >
                                         <a className="hover:scale-110 duration-300 hover:text-purple-800" href="https://www.instagram.com/ken.qer/" target="_blank">
-                                            <ion-icon name="logo-instagram"></ion-icon>
+                                            <SiInstagram></SiInstagram>
                                         </a>
                                     </motion.div>
                                     <motion.div
@@ -90,8 +93,8 @@ const Contact = () => {
                                             type: 'spring'
                                         }}
                                     >
-                                        <a className="hover:scale-110 duration-300 hover:text-white" href="https://www.instagram.com/ken.qer/" target="_blank">
-                                            <ion-icon name="logo-github"></ion-icon>
+                                        <a className="hover:scale-110 duration-300 hover:text-gray-500" href="https://github.com/Kenqer" target="_blank">
+                                            <SiGithub></SiGithub>
                                         </a>
                                     </motion.div>
                                     <motion.div
@@ -105,8 +108,8 @@ const Contact = () => {
                                             type: 'spring'
                                         }}
                                     >
-                                        <a className="hover:scale-110 duration-300 hover:text-red-500" href="https://www.instagram.com/ken.qer/" target="_blank">
-                                            <ion-icon name="logo-youtube"></ion-icon>
+                                        <a className="hover:scale-110 duration-300 hover:text-red-500" href="https://www.youtube.com/channel/UCXG6GuBh1oHQaYM6TQ7-NRw" target="_blank">
+                                            <SiYoutube></SiYoutube>
                                         </a>
                                     </motion.div>
                                     <motion.div
@@ -120,31 +123,66 @@ const Contact = () => {
                                             type: 'spring'
                                         }}
                                     >
-                                        <a className="hover:scale-110 duration-300 hover:text-blue-400" href="https://www.instagram.com/ken.qer/" target="_blank">
-                                            <ion-icon name="logo-twitter"></ion-icon>
+                                        <a className="hover:scale-110 duration-300 hover:text-blue-900" href="https://www.linkedin.com/in/javier-kennedi-9bb6342aa/" target="_blank">
+                                            <SiLinkedin></SiLinkedin>
+                                        </a>
+                                    </motion.div>
+                                    <motion.div
+                                        variants={iconList}
+                                        initial="hidd"
+                                        animate="visi"
+                                        transition={{
+                                            delay: 1,
+                                            duration: 1,
+                                            bounce: 0.55,
+                                            type: 'spring'
+                                        }}
+                                    >
+                                        <a className="hover:scale-110 duration-300 hover:text-blue-400" href="https://twitter.com/itisnotken" target="_blank">
+                                            <SiTwitter></SiTwitter>
+                                        </a>
+                                    </motion.div>
+                                    <motion.div
+                                        variants={iconList}
+                                        initial="hidd"
+                                        animate="visi"
+                                        transition={{
+                                            delay: 1.2,
+                                            duration: 1,
+                                            bounce: 0.55,
+                                            type: 'spring'
+                                        }}
+                                    >
+                                        <a className="hover:scale-110 duration-300 hover:text-sky-400" href="https://twitter.com/itisnotken" target="_blank">
+                                            <SiFreelancer></SiFreelancer>
                                         </a>
                                     </motion.div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className='absolute z-[1] md:mt-[-40rem] lg:mt-[-40rem] mt-[-30rem] lg:ml-[-30rem] md:ml-[-30rem] ml-[-14rem] '>
+                    {/* <div className='absolute z-[1] md:mt-[-40rem] lg:mt-[-40rem] mt-[-30rem] lg:ml-[-30rem] md:ml-[-30rem] ml-[-14rem] '>
                         <img src="./img/mail.webp" alt="" className='lg:w-40 lg:h-40 md:w-40 md:h-40 w-20 h-20 mail' />
-                    </div>
-                    <div className='absolute z-[1] mb-[-30rem] lg:mr-[-30rem] md:mr-[-30rem] mr-[-10rem]'>
-                        <img src="./img/mail2.svg" alt="" className='lg:w-48 lg:h-48 md:w-48 md:h-48 w-28 h-28 mail' />
-                    </div>
+                    </div> */}
+
                 </form>
                 <section className='w-full h-screen flex items-center justify-center '>
-                        <div className="pt-[25vh] px-[10%] z-[1] blur-sm md:blur-sm lg:blur-none ">
-                            <motion.div
-                                initial={{ opacity: 0, filter: 'blur(15px)', y: 50 }}
-                                whileInView={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
-                                viewport={{ once: true, amount: 0.2 }}
-                                className="z-[1] w-[50vh] md:w-[80vh] lg:w-[80vh] md:mt-[-15vh] lg:mt-[-15vh]">
-                                <img src="./img/cswork.svg" alt="" />
-                            </motion.div>
-                        </div>
+                    <div className="px-[10%] z-[1] blur-sm md:blur-sm lg:blur-none ">
+                        <motion.div
+                            initial={{ opacity: 0, filter: 'blur(15px)', y: 50 }}
+                            whileInView={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
+                            viewport={{ once: true, amount: 0.2 }}
+                            transition={{ duration: 1.2 }}
+                            className="z-[1] w-[50vh] md:w-[80vh] lg:w-[80vh] md:mt-[-15vh] lg:mt-[-15vh]">
+                            <lottie-player
+                                autoplay
+                                loop
+                                mode="normal"
+                                src="https://lottie.host/a365ffae-b83b-49cb-bea5-4209bbc79bbd/MKlmWoTF15.json"
+                                className="w-20 h-20"
+                            ></lottie-player>
+                        </motion.div>
+                    </div>
                 </section>
             </div >
         </main >

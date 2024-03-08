@@ -1,6 +1,18 @@
 import { motion, useInView, useAnimation, spring } from "framer-motion"
+import { SiAmazonaws, SiAndroid, SiAndroidstudio, SiChakraui, SiCpanel, SiExpo, SiExpress, SiFramer, SiFreelancer, SiGit, SiGithub, SiGithubpages, SiInstagram, SiLinkedin, SiMongodb, SiMysql, SiPython, SiReact, SiTailwindcss, SiTwitter, SiVercel, SiYoutube } from 'react-icons/si'
+
 
 const About = () => {
+    const iconList = {
+        hidd: {
+            opacity: 0,
+            y: 35
+        },
+        visi: {
+            opacity: 1,
+            y: 0,
+        }
+    }
     return (
         <section className="about">
             <header className="home">
@@ -27,10 +39,96 @@ const About = () => {
                                 Currently in the process of learning JavaScript, my proficiency in JavaScript is at a basic level. I always want to learn and provide new different ways to illustrate a beautiful website.</p>
                         </div>
                         <div className="flex text-2xl md:text-4xl gap-4">
-                            <a className="hover:text-purple-600 hover:scale-110 duration-300" href="https://www.instagram.com/ken.qer/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-                            <a className="hover:text-gray-600 hover:scale-110 duration-300" href="https://github.com/Kenqer" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
-                            <a className="hover:text-red-600 hover:scale-110 duration-300" href="https://www.youtube.com/channel/UCXG6GuBh1oHQaYM6TQ7-NRw" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
-                            <a className="hover:text-blue-600 hover:scale-110 duration-300" href="https://twitter.com/itisnotken" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <motion.div
+                                        variants={iconList}
+                                        initial="hidd"
+                                        animate="visi"
+                                        transition={{
+                                            delay: 0.2,
+                                            duration: 1,
+                                            bounce: 0.55,
+                                            type: 'spring'
+                                        }}
+                                    >
+                                        <a className="hover:scale-110 duration-300 hover:text-purple-800" href="https://www.instagram.com/ken.qer/" target="_blank">
+                                            <SiInstagram></SiInstagram>
+                                        </a>
+                                    </motion.div>
+                                    <motion.div
+                                        variants={iconList}
+                                        initial="hidd"
+                                        animate="visi"
+                                        transition={{
+                                            delay: 0.4,
+                                            duration: 1,
+                                            bounce: 0.55,
+                                            type: 'spring'
+                                        }}
+                                    >
+                                        <a className="hover:scale-110 duration-300 hover:text-gray-500" href="https://github.com/Kenqer" target="_blank">
+                                            <SiGithub></SiGithub>
+                                        </a>
+                                    </motion.div>
+                                    <motion.div
+                                        variants={iconList}
+                                        initial="hidd"
+                                        animate="visi"
+                                        transition={{
+                                            delay: 0.6,
+                                            duration: 1,
+                                            bounce: 0.55,
+                                            type: 'spring'
+                                        }}
+                                    >
+                                        <a className="hover:scale-110 duration-300 hover:text-red-500" href="https://www.youtube.com/channel/UCXG6GuBh1oHQaYM6TQ7-NRw" target="_blank">
+                                            <SiYoutube></SiYoutube>
+                                        </a>
+                                    </motion.div>
+                                    <motion.div
+                                        variants={iconList}
+                                        initial="hidd"
+                                        animate="visi"
+                                        transition={{
+                                            delay: 0.8,
+                                            duration: 1,
+                                            bounce: 0.55,
+                                            type: 'spring'
+                                        }}
+                                    >
+                                        <a className="hover:scale-110 duration-300 hover:text-blue-900" href="https://www.linkedin.com/in/javier-kennedi-9bb6342aa/" target="_blank">
+                                            <SiLinkedin></SiLinkedin>
+                                        </a>
+                                    </motion.div>
+                                    <motion.div
+                                        variants={iconList}
+                                        initial="hidd"
+                                        animate="visi"
+                                        transition={{
+                                            delay: 1,
+                                            duration: 1,
+                                            bounce: 0.55,
+                                            type: 'spring'
+                                        }}
+                                    >
+                                        <a className="hover:scale-110 duration-300 hover:text-blue-400" href="https://twitter.com/itisnotken" target="_blank">
+                                            <SiTwitter></SiTwitter>
+                                        </a>
+                                    </motion.div>
+                                    <motion.div
+                                        variants={iconList}
+                                        initial="hidd"
+                                        animate="visi"
+                                        transition={{
+                                            delay: 1.2,
+                                            duration: 1,
+                                            bounce: 0.55,
+                                            type: 'spring'
+                                        }}
+                                    >
+                                        <a className="hover:scale-110 duration-300 hover:text-sky-400" href="https://twitter.com/itisnotken" target="_blank">
+                                            <SiFreelancer></SiFreelancer>
+                                        </a>
+                                    </motion.div>
                         </div>
                     </div>
 
