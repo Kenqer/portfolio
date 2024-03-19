@@ -35,8 +35,7 @@ const About = () => {
                         </div>
                         <div className="text-xl md:text-2xl">
                             <span className="font-semibold">Hello there,</span>
-                            <p className="w-full font-serif">My name is Javier Kennedi, I live in Indonesia. I make a responsive and high-quality website. While my main focus is on the front end, I can manage basic backend tasks.
-                                Currently in the process of learning JavaScript, my proficiency in JavaScript is at a basic level. I always want to learn and provide new different ways to illustrate a beautiful website.</p>
+                            <p className="w-full font-serif">My name is Javier Kennedi, and I reside in Indonesia. I specialize in creating responsive, high-quality websites with a keen focus on front-end development. With expertise in React Native JavaScript and React.js, I excel in crafting dynamic and visually appealing web applications. While my primary focus lies in front-end development, I am also proficient in handling basic backend tasks. Constantly striving to innovate, I am dedicated to exploring new techniques to enhance the aesthetics and functionality of websites.</p>
                         </div>
                         <div className="flex text-2xl md:text-4xl gap-4">
                         <motion.div
