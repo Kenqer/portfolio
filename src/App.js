@@ -5,7 +5,9 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Footer from './components/Navigations/Footer';
 import Contact from './pages/Contact';
 import { ChakraProvider } from '@chakra-ui/react'
+import { Analytics } from "@vercel/analytics/react"
 import {} from 'framer-motion'
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
         </div>
 
       </Router>
+      <Analytics></Analytics>
+      <SpeedInsights></SpeedInsights>
     </ChakraProvider>
 
   );
