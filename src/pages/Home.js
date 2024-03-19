@@ -216,6 +216,18 @@ const Home = () => {
                                     </div>
                                 </a>
                             </div>
+                            <div className="w-full h-auto cursor-pointer border  rounded-xl hover:border-b-8 hover:border-b-teal-600 hover:rounded-b-2xl flex flex-col relative px-3 pt-3  hover:scale-[103%] duration-200 shadow-lg">
+                                <a target='_blank' href="https://www.dicoding.com/certificates/EYX403EYWPDL">
+                                    <img className="aspect-[16/11.25]" src="/img/dicoding1.webp" alt="jawa" />
+                                    <div className='px-1 py-4'>
+                                        <div className='text-lg font-mono flex justify-between'>
+                                            <em>Academy</em>
+                                            <em>Mar 2024</em>
+                                        </div>
+                                        <h1 className='font-semibold text-xl'>Dicoding Academy - Web Developement Basic</h1>
+                                    </div>
+                                </a>
+                            </div>
                             <div>
                             </div>
                         </div>
