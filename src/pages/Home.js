@@ -466,10 +466,10 @@ const Home = () => {
                                             </span>
                                         </Tooltip>
                                     </li>
-                                    <li className=" bg-black rounded-full flex items-center">
+                                    <li className="">
                                         <Tooltip label="Vercel" hasArrow>
                                             <span>
-                                                <SiVercel className="text-5xl text-white p-2"></SiVercel>
+                                                <SiVercel className="text-5xl text-black"></SiVercel>
                                             </span>
                                         </Tooltip>
                                     </li>
