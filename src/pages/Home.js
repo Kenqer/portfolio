@@ -1,6 +1,6 @@
 import { motion, useInView, useAnimation, spring } from "framer-motion"
 import Reveal from "../components/utils/Reveal";
-import { SiAmazonaws, SiAndroid, SiAndroidstudio, SiChakraui, SiCpanel, SiExpo, SiExpress, SiFramer, SiFreelancer, SiGit, SiGithub, SiGithubpages, SiInstagram, SiLinkedin, SiMongodb, SiMysql, SiPython, SiReact, SiTailwindcss, SiTwitter, SiVercel, SiYoutube } from 'react-icons/si'
+import { SiAmazonaws, SiAndroid, SiAndroidstudio, SiChakraui, SiCpanel, SiExpo, SiExpress, SiFramer, SiFreelancer, SiGit, SiGithub, SiGithubpages, SiInstagram, SiLinkedin, SiMongodb, SiMysql, SiPython, SiReact, SiTailwindcss, SiTwitter, SiVercel, SiYoutube, SiAxios, SiJsonwebtokens, SiVite } from 'react-icons/si'
 import * as LottiePlayer from "@lottiefiles/lottie-player";
 import { Tooltip } from '@chakra-ui/react'
 
@@ -125,7 +125,7 @@ const Home = () => {
                                         <SiFreelancer></SiFreelancer>
                                     </a>
                                 </motion.div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -274,7 +274,26 @@ const Home = () => {
                                     <li className='text-yellow-500 '>
                                         <Tooltip label="Python" hasArrow>
                                             <span>
-                                                <SiPython className=""></SiPython>
+                                                <svg width="64" height="64" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                                    <defs>
+                                                        <linearGradient id="a" x1="0.13" x2="0.8" y1="0.12" y2="0.78">
+                                                            <stop stop-color="#387EB8" />
+                                                            <stop offset="1" stop-color="#366994" />
+                                                        </linearGradient>
+                                                        <linearGradient id="b" x1="0.19" x2="0.91" y1="0.2" y2="0.89">
+                                                            <stop stop-color="#FFE052" />
+                                                            <stop offset="1" stop-color="#FFC331" />
+                                                        </linearGradient>
+                                                    </defs>
+                                                    <g class="layer">
+                                                        <title>Layer 1</title>
+                                                        <g id="svg_3">
+                                                            <path d="m32.23,3c-14.95,0 -14.02,6.47 -14.02,6.47l0.02,6.71l14.25,0l0,2.02l-19.92,0s-9.56,-1.09 -9.56,14c0,15.06 8.35,14.53 8.35,14.53l4.97,0l0,-6.99s-0.26,-8.35 8.22,-8.35l14.14,0s7.95,0.13 7.95,-7.67l0,-12.91s1.2,-7.82 -14.4,-7.82zm-7.87,4.51c1.42,0 2.56,1.16 2.56,2.57s-1.14,2.56 -2.56,2.56a2.56,2.56 0 0 1 -2.57,-2.56c0,-1.42 1.16,-2.57 2.57,-2.57z" fill="url(#a)" id="svg_1" />
+                                                            <path d="m32.65,61.54c14.93,0 14,-6.47 14,-6.47l-0.02,-6.71l-14.25,0l0,-2.02l19.92,0s9.56,1.1 9.56,-13.98c0,-15.08 -8.35,-14.55 -8.35,-14.55l-4.97,0l0,7.01s0.26,8.33 -8.22,8.33l-14.14,0s-7.95,-0.13 -7.95,7.69l0,12.91s-1.2,7.8 14.42,7.8zm7.85,-4.51a2.56,2.56 0 0 1 -2.57,-2.57c0,-1.42 1.16,-2.56 2.57,-2.56s2.57,1.14 2.57,2.56c0,1.43 -1.16,2.57 -2.57,2.57z" fill="url(#b)" id="svg_2" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+
                                             </span>
                                         </Tooltip>
                                     </li>
@@ -335,21 +354,57 @@ const Home = () => {
                                     <li>
                                         <Tooltip label="MongoDB" hasArrow>
                                             <span>
-                                                <SiMongodb className="fa-brands fa-laravel text-green-600"></SiMongodb>
+                                                <SiMongodb className="text-green-600"></SiMongodb>
                                             </span>
                                         </Tooltip>
                                     </li>
                                     <li>
                                         <Tooltip label="MySQL" hasArrow>
                                             <span>
-                                                <SiMysql className="fa-brands fa-laravel text-orange-400"></SiMysql>
+                                                <SiMysql className="text-orange-400"></SiMysql>
                                             </span>
                                         </Tooltip>
                                     </li>
                                     <li>
                                         <Tooltip label="Express JS" hasArrow>
                                             <span>
-                                                <SiExpress className="fa-brands fa-laravel text-black"></SiExpress>
+                                                <SiExpress className="text-black"></SiExpress>
+                                            </span>
+                                        </Tooltip>
+                                    </li>
+                                    <li>
+                                        <Tooltip label="Axios" hasArrow>
+                                            <span>
+                                                <SiAxios className="text-black"></SiAxios>
+                                            </span>
+                                        </Tooltip>
+                                    </li>
+                                    <li>
+                                        <Tooltip label="JWT" hasArrow>
+                                            <span>
+                                                <SiJsonwebtokens className="text-black"></SiJsonwebtokens>
+                                            </span>
+                                        </Tooltip>
+                                    </li>
+                                    <li>
+                                        <Tooltip label="Vite" hasArrow>
+                                            <span>
+                                                <svg width="50" height="50" viewBox="0 0 410 404" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M399.641 59.5246L215.643 388.545C211.844 395.338 202.084 395.378 198.228 388.618L10.5817 59.5563C6.38087 52.1896 12.6802 43.2665 21.0281 44.7586L205.223 77.6824C206.398 77.8924 207.601 77.8904 208.776 77.6763L389.119 44.8058C397.439 43.2894 403.768 52.1434 399.641 59.5246Z" fill="url(#paint0_linear)" />
+                                                    <path d="M292.965 1.5744L156.801 28.2552C154.563 28.6937 152.906 30.5903 152.771 32.8664L144.395 174.33C144.198 177.662 147.258 180.248 150.51 179.498L188.42 170.749C191.967 169.931 195.172 173.055 194.443 176.622L183.18 231.775C182.422 235.487 185.907 238.661 189.532 237.56L212.947 230.446C216.577 229.344 220.065 232.527 219.297 236.242L201.398 322.875C200.278 328.294 207.486 331.249 210.492 326.603L212.5 323.5L323.454 102.072C325.312 98.3645 322.108 94.137 318.036 94.9228L279.014 102.454C275.347 103.161 272.227 99.746 273.262 96.1583L298.731 7.86689C299.767 4.27314 296.636 0.855181 292.965 1.5744Z" fill="url(#paint1_linear)" />
+                                                    <defs>
+                                                        <linearGradient id="paint0_linear" x1="6.00017" y1="32.9999" x2="235" y2="344" gradientUnits="userSpaceOnUse">
+                                                            <stop stop-color="#41D1FF" />
+                                                            <stop offset="1" stop-color="#BD34FE" />
+                                                        </linearGradient>
+                                                        <linearGradient id="paint1_linear" x1="194.651" y1="8.81818" x2="236.076" y2="292.989" gradientUnits="userSpaceOnUse">
+                                                            <stop stop-color="#FFEA83" />
+                                                            <stop offset="0.0833333" stop-color="#FFDD35" />
+                                                            <stop offset="1" stop-color="#FFA800" />
+                                                        </linearGradient>
+                                                    </defs>
+                                                </svg>
+
                                             </span>
                                         </Tooltip>
                                     </li>
@@ -460,11 +515,11 @@ const Home = () => {
                         whileInView={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
                         viewport={{ once: true, amount: 0.2 }}
                     >
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-[2%]">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-[2%]">
                             <div className="w-full h-auto overflow-hidden group cursor-pointer border rounded-xl flex flex-col relative hover:scale-[103%] duration-200 shadow-lg pb-10">
                                 <a target='_blank' href="https://flixflare.vercel.app">
                                     <div className="rounded-b-xl duration-200">
-                                        <img className="w-full h-full" src="./img/flix.webp" alt="jawa" />
+                                        <img className="w-full h-full aspect-[16/11.25]" src="./img/flix.webp" alt="jawa" />
                                     </div>
                                     <div className='px-7 py-4'>
                                         <div className="">
@@ -488,7 +543,7 @@ const Home = () => {
                             <div className="w-full h-auto overflow-hidden group cursor-pointer border rounded-xl flex flex-col relative hover:scale-[103%] duration-200 shadow-lg pb-10">
                                 <a target='_blank' href="https://legoin.org">
                                     <div className="rounded-b-xl duration-200">
-                                        <img className="w-full h-full" src="./img/port.webp" alt="jawa" />
+                                        <img className="w-full h-full aspect-[16/11.25]" src="./img/port.webp" alt="jawa" />
                                     </div>
                                     <div className='px-7 py-4'>
                                         <div className="pb-20">
@@ -504,6 +559,36 @@ const Home = () => {
                                         <div className="flex flex-row items-end gap-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-react w-[35px] h-[35px] text-blue-400" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M6.306 8.711c-2.602 .723 -4.306 1.926 -4.306 3.289c0 2.21 4.477 4 10 4c.773 0 1.526 -.035 2.248 -.102" /><path d="M17.692 15.289c2.603 -.722 4.308 -1.926 4.308 -3.289c0 -2.21 -4.477 -4 -10 -4c-.773 0 -1.526 .035 -2.25 .102" /><path d="M6.305 15.287c-.676 2.615 -.485 4.693 .695 5.373c1.913 1.105 5.703 -1.877 8.464 -6.66c.387 -.67 .733 -1.339 1.036 -2" /><path d="M17.694 8.716c.677 -2.616 .487 -4.696 -.694 -5.376c-1.913 -1.105 -5.703 1.877 -8.464 6.66c-.387 .67 -.733 1.34 -1.037 2" /><path d="M12 5.424c-1.925 -1.892 -3.82 -2.766 -5 -2.084c-1.913 1.104 -1.226 5.877 1.536 10.66c.386 .67 .793 1.304 1.212 1.896" /><path d="M12 18.574c1.926 1.893 3.821 2.768 5 2.086c1.913 -1.104 1.226 -5.877 -1.536 -10.66c-.375 -.65 -.78 -1.283 -1.212 -1.897" /><path d="M11.5 12.866a1 1 0 1 0 1 -1.732a1 1 0 0 0 -1 1.732z" /></svg>
                                             <i><svg className='w-[35px] h-[35px] fill-blue-400' height="24" viewBox="0 0 24 24" width="34" xmlns="http://www.w3.org/2000/svg"><path d="M18.5 9.51a4.22 4.22 0 0 1-1.91-1.34A5.77 5.77 0 0 0 12 6a4.72 4.72 0 0 0-5 4 3.23 3.23 0 0 1 3.5-1.49 4.32 4.32 0 0 1 1.91 1.35A5.77 5.77 0 0 0 17 12a4.72 4.72 0 0 0 5-4 3.2 3.2 0 0 1-3.5 1.51zm-13 4.98a4.22 4.22 0 0 1 1.91 1.34A5.77 5.77 0 0 0 12 18a4.72 4.72 0 0 0 5-4 3.23 3.23 0 0 1-3.5 1.49 4.32 4.32 0 0 1-1.91-1.35A5.8 5.8 0 0 0 7 12a4.72 4.72 0 0 0-5 4 3.2 3.2 0 0 1 3.5-1.51z" /></svg></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div className="w-full h-auto overflow-hidden group cursor-pointer border rounded-xl flex flex-col relative hover:scale-[103%] duration-200 shadow-lg pb-10">
+                                <a href="#">
+                                    <div className="rounded-b-xl duration-200">
+                                        <img className="w-full h-full aspect-[16/11.25]" src="./img/blog.webp" alt="jawa" />
+                                    </div>
+                                    <div className='px-7 py-4'>
+                                        <div className="pb-20">
+                                            <div className='text-lg font-mono flex justify-between'>
+                                                <em>Semi-finish</em>
+                                                <em>Mar 2024</em>
+                                            </div>
+                                            <div className="flex flex-col gap-3 pb-3">
+                                                <h1 className='font-semibold text-xl'>Blog Application</h1>
+                                                <p className="text-gray-500">I've developed the backend using Express.js for my blog application built with React Native. It includes several features such as creating articles and user account registration to save and post articles.</p>
+                                            </div>
+                                        </div>
+                                        <div className="flex flex-row items-center gap-3">
+                                            <span className="flex flex-col items-center">
+                                                <SiReact className="text-xl text-sky-400"></SiReact>
+                                                <span className="text-[10px] font-[jawa] font-bold text-sky-400">Native</span>
+                                            </span>
+                                            <SiTailwindcss className="text-3xl text-blue-400"></SiTailwindcss>
+                                            <SiAndroidstudio className="text-3xl text-green-400"></SiAndroidstudio>
+                                            <SiExpress className="text-3xl text-black"></SiExpress>
+                                            <SiMongodb className="text-3xl text-green-600"></SiMongodb>
+                                            <SiAxios className="text-3xl text-black"></SiAxios>
                                         </div>
                                     </div>
                                 </a>
