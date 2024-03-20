@@ -516,13 +516,13 @@ const Home = () => {
                         viewport={{ once: true, amount: 0.2 }}
                     >
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-[2%]">
-                            <div className="w-full h-auto overflow-hidden group cursor-pointer border rounded-xl flex flex-col relative hover:scale-[103%] duration-200 shadow-lg pb-10">
+                            <div className="w-full h-auto overflow-hidden group cursor-pointer border rounded-xl flex flex-col relative hover:scale-[103%] duration-200 shadow-lg pb-4 md:pb-0">
                                 <a target='_blank' href="https://flixflare.vercel.app">
                                     <div className="rounded-b-xl duration-200">
                                         <img className="w-full h-full aspect-[16/11.25]" src="./img/flix.webp" alt="jawa" />
                                     </div>
-                                    <div className='px-7 py-4'>
-                                        <div className="">
+                                    <div className='px-7 pt-4'>
+                                        <div className="aspect-[12/6]">
                                             <div className='text-lg font-mono flex justify-between'>
                                                 <em>Work in Progress</em>
                                                 <em>Jan 2024</em>
@@ -545,8 +545,8 @@ const Home = () => {
                                     <div className="rounded-b-xl duration-200">
                                         <img className="w-full h-full aspect-[16/11.25]" src="./img/port.webp" alt="jawa" />
                                     </div>
-                                    <div className='px-7 py-4'>
-                                        <div className="pb-20">
+                                    <div className='px-7 pt-4'>
+                                        <div className="aspect-[12/6]">
                                             <div className='text-lg font-mono flex justify-between'>
                                                 <em>Ongoing</em>
                                                 <em>Jan 2024</em>
@@ -568,8 +568,8 @@ const Home = () => {
                                     <div className="rounded-b-xl duration-200">
                                         <img className="w-full h-full aspect-[16/11.25]" src="./img/blog.webp" alt="jawa" />
                                     </div>
-                                    <div className='px-7 py-4'>
-                                        <div className="pb-20">
+                                    <div className='px-7 pt-4'>
+                                        <div className="aspect-[12/6]">
                                             <div className='text-lg font-mono flex justify-between'>
                                                 <em>Semi-finish</em>
                                                 <em>Mar 2024</em>
