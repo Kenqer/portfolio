@@ -1,8 +1,9 @@
-import { motion, useInView, useAnimation, spring } from "framer-motion"
+import { motion } from "framer-motion"
 import Reveal from "../components/utils/Reveal";
-import { SiAmazonaws, SiAndroid, SiAndroidstudio, SiChakraui, SiCpanel, SiExpo, SiExpress, SiFramer, SiFreelancer, SiGit, SiGithub, SiGithubpages, SiInstagram, SiLinkedin, SiMongodb, SiMysql, SiPython, SiReact, SiTailwindcss, SiTwitter, SiVercel, SiYoutube, SiAxios, SiJsonwebtokens, SiVite } from 'react-icons/si'
-import * as LottiePlayer from "@lottiefiles/lottie-player";
+import { SiAmazonaws, SiAndroid, SiAndroidstudio, SiChakraui, SiCpanel, SiExpo, SiExpress, SiFramer, SiFreelancer, SiGit, SiGithub, SiGithubpages, SiInstagram, SiLinkedin, SiMongodb, SiMysql,  SiReact, SiTailwindcss, SiTwitter, SiVercel, SiYoutube, SiAxios, SiJsonwebtokens } from 'react-icons/si';
 import { Tooltip } from '@chakra-ui/react'
+import * as LottiePlayer from "@lottiefiles/lottie-player";
+
 
 const Home = () => {
     const iconList = {
@@ -46,7 +47,7 @@ const Home = () => {
                                         type: 'spring'
                                     }}
                                 >
-                                    <a className="hover:scale-110 duration-300 hover:text-purple-800" href="https://www.instagram.com/ken.qer/" target="_blank">
+                                    <a className="hover:scale-110 duration-300 hover:text-purple-800" href="https://www.instagram.com/ken.qer/" rel="noreferrer" target="_blank">
                                         <SiInstagram></SiInstagram>
                                     </a>
                                 </motion.div>
@@ -61,7 +62,7 @@ const Home = () => {
                                         type: 'spring'
                                     }}
                                 >
-                                    <a className="hover:scale-110 duration-300 hover:text-gray-500" href="https://github.com/Kenqer" target="_blank">
+                                    <a className="hover:scale-110 duration-300 hover:text-gray-500" href="https://github.com/Kenqer" rel="noreferrer" target="_blank">
                                         <SiGithub></SiGithub>
                                     </a>
                                 </motion.div>
@@ -76,7 +77,7 @@ const Home = () => {
                                         type: 'spring'
                                     }}
                                 >
-                                    <a className="hover:scale-110 duration-300 hover:text-red-500" href="https://www.youtube.com/channel/UCXG6GuBh1oHQaYM6TQ7-NRw" target="_blank">
+                                    <a className="hover:scale-110 duration-300 hover:text-red-500" href="https://www.youtube.com/channel/UCXG6GuBh1oHQaYM6TQ7-NRw" rel="noreferrer" target="_blank">
                                         <SiYoutube></SiYoutube>
                                     </a>
                                 </motion.div>
@@ -91,7 +92,7 @@ const Home = () => {
                                         type: 'spring'
                                     }}
                                 >
-                                    <a className="hover:scale-110 duration-300 hover:text-blue-900" href="https://www.linkedin.com/in/javier-kennedi-9bb6342aa/" target="_blank">
+                                    <a className="hover:scale-110 duration-300 hover:text-blue-900" href="https://www.linkedin.com/in/javier-kennedi-9bb6342aa/" rel="noreferrer" target="_blank">
                                         <SiLinkedin></SiLinkedin>
                                     </a>
                                 </motion.div>
@@ -106,7 +107,7 @@ const Home = () => {
                                         type: 'spring'
                                     }}
                                 >
-                                    <a className="hover:scale-110 duration-300 hover:text-blue-400" href="https://twitter.com/itisnotken" target="_blank">
+                                    <a className="hover:scale-110 duration-300 hover:text-blue-400" href="https://twitter.com/itisnotken" rel="noreferrer" target="_blank">
                                         <SiTwitter></SiTwitter>
                                     </a>
                                 </motion.div>
@@ -121,7 +122,7 @@ const Home = () => {
                                         type: 'spring'
                                     }}
                                 >
-                                    <a className="hover:scale-110 duration-300 hover:text-sky-400" href="https://www.freelancer.com/u/JavierKennedi" target="_blank">
+                                    <a className="hover:scale-110 duration-300 hover:text-sky-400" href="https://www.freelancer.com/u/JavierKennedi" rel="noreferrer" target="_blank">
                                         <SiFreelancer></SiFreelancer>
                                     </a>
                                 </motion.div>
@@ -179,7 +180,7 @@ const Home = () => {
                                 </a>
                             </div>
                             <div className="w-full h-auto cursor-pointer border rounded-xl hover:border-b-8 hover:border-b-teal-600 hover:rounded-b-2xl flex flex-col relative px-3 pt-3  hover:scale-[103%] duration-200 shadow-lg">
-                                <a target="_blank" href="https://www.w3docs.com/quiz/certificate/3/100/1704877126/Javier%20Kennedi/b5bef9956d838ff3e475f2ae3fe38799">
+                                <a rel="noreferrer" target="_blank" href="https://www.w3docs.com/quiz/certificate/3/100/1704877126/Javier%20Kennedi/b5bef9956d838ff3e475f2ae3fe38799">
                                     <div className="">
                                         <img className="aspect-[16/11.25]" src="img/c2.webp" alt="jawa" />
                                     </div>
@@ -277,15 +278,15 @@ const Home = () => {
                                                 <svg width="64" height="64" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
                                                     <defs>
                                                         <linearGradient id="a" x1="0.13" x2="0.8" y1="0.12" y2="0.78">
-                                                            <stop stop-color="#387EB8" />
-                                                            <stop offset="1" stop-color="#366994" />
+                                                            <stop stopColor="#387EB8" />
+                                                            <stop offset="1" stopColor="#366994" />
                                                         </linearGradient>
                                                         <linearGradient id="b" x1="0.19" x2="0.91" y1="0.2" y2="0.89">
-                                                            <stop stop-color="#FFE052" />
-                                                            <stop offset="1" stop-color="#FFC331" />
+                                                            <stop stopColor="#FFE052" />
+                                                            <stop offset="1" stopColor="#FFC331" />
                                                         </linearGradient>
                                                     </defs>
-                                                    <g class="layer">
+                                                    <g className="layer">
                                                         <title>Layer 1</title>
                                                         <g id="svg_3">
                                                             <path d="m32.23,3c-14.95,0 -14.02,6.47 -14.02,6.47l0.02,6.71l14.25,0l0,2.02l-19.92,0s-9.56,-1.09 -9.56,14c0,15.06 8.35,14.53 8.35,14.53l4.97,0l0,-6.99s-0.26,-8.35 8.22,-8.35l14.14,0s7.95,0.13 7.95,-7.67l0,-12.91s1.2,-7.82 -14.4,-7.82zm-7.87,4.51c1.42,0 2.56,1.16 2.56,2.57s-1.14,2.56 -2.56,2.56a2.56,2.56 0 0 1 -2.57,-2.56c0,-1.42 1.16,-2.57 2.57,-2.57z" fill="url(#a)" id="svg_1" />
@@ -346,13 +347,13 @@ const Home = () => {
                                                     <path d="M292.965 1.5744L156.801 28.2552C154.563 28.6937 152.906 30.5903 152.771 32.8664L144.395 174.33C144.198 177.662 147.258 180.248 150.51 179.498L188.42 170.749C191.967 169.931 195.172 173.055 194.443 176.622L183.18 231.775C182.422 235.487 185.907 238.661 189.532 237.56L212.947 230.446C216.577 229.344 220.065 232.527 219.297 236.242L201.398 322.875C200.278 328.294 207.486 331.249 210.492 326.603L212.5 323.5L323.454 102.072C325.312 98.3645 322.108 94.137 318.036 94.9228L279.014 102.454C275.347 103.161 272.227 99.746 273.262 96.1583L298.731 7.86689C299.767 4.27314 296.636 0.855181 292.965 1.5744Z" fill="url(#paint1_linear)" />
                                                     <defs>
                                                         <linearGradient id="paint0_linear" x1="6.00017" y1="32.9999" x2="235" y2="344" gradientUnits="userSpaceOnUse">
-                                                            <stop stop-color="#41D1FF" />
-                                                            <stop offset="1" stop-color="#BD34FE" />
+                                                            <stop stopColor="#41D1FF" />
+                                                            <stop offset="1" stopColor="#BD34FE" />
                                                         </linearGradient>
                                                         <linearGradient id="paint1_linear" x1="194.651" y1="8.81818" x2="236.076" y2="292.989" gradientUnits="userSpaceOnUse">
-                                                            <stop stop-color="#FFEA83" />
-                                                            <stop offset="0.0833333" stop-color="#FFDD35" />
-                                                            <stop offset="1" stop-color="#FFA800" />
+                                                            <stop stopColor="#FFEA83" />
+                                                            <stop offset="0.0833333" stopColor="#FFDD35" />
+                                                            <stop offset="1" stopColor="#FFA800" />
                                                         </linearGradient>
                                                     </defs>
                                                 </svg>

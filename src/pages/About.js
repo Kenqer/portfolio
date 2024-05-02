@@ -1,5 +1,6 @@
 import { motion, useInView, useAnimation, spring } from "framer-motion"
 import { SiAmazonaws, SiAndroid, SiAndroidstudio, SiChakraui, SiCpanel, SiExpo, SiExpress, SiFramer, SiFreelancer, SiGit, SiGithub, SiGithubpages, SiInstagram, SiLinkedin, SiMongodb, SiMysql, SiPython, SiReact, SiTailwindcss, SiTwitter, SiVercel, SiYoutube } from 'react-icons/si'
+import * as LottiePlayer from "@lottiefiles/lottie-player";
 
 
 const About = () => {

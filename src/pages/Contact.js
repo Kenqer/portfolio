@@ -2,7 +2,7 @@ import emailjs from '@emailjs/browser';
 import React, { useRef } from "react";
 import { motion, useInView, useAnimation, spring } from "framer-motion"
 import * as LottiePlayer from "@lottiefiles/lottie-player";
-import { SiAmazonaws, SiAndroid, SiAndroidstudio, SiChakraui, SiCpanel, SiExpo, SiExpress, SiFramer, SiFreelancer, SiGit, SiGithub, SiGithubpages, SiInstagram, SiLinkedin, SiMongodb, SiMysql, SiPython, SiReact, SiTailwindcss, SiTwitter, SiVercel, SiYoutube } from 'react-icons/si'
+import { SiFreelancer, SiGithub, SiInstagram, SiLinkedin, SiTwitter, SiYoutube } from 'react-icons/si'
 
 
 const Contact = () => {
@@ -62,7 +62,7 @@ const Contact = () => {
                             </label>
                             <label className='flex flex-col'>
                                 Message
-                                <textarea name="message" rows='4' cols='30' placeholder='What can I possibily help you with?' className='border-b border-teal-500 shadow-xl bg-transparent outline-none' />
+                                <textarea name="message" rows='4' cols='30' placeholder='What can I possibly help you with?' className='border-b border-teal-500 shadow-xl bg-transparent outline-none' />
                             </label>
                             <div className='flex flex-row items-center gap-5'>
                                 <button type="submit" value="Send" className='px-10 py-1 text-xl font-semibold font-[jawa] bg-teal-600 rounded-xl shadow-xl hover:scale-110 hover:bg-teal-200 duration-200' >Send</button>
@@ -78,7 +78,7 @@ const Contact = () => {
                                             type: 'spring'
                                         }}
                                     >
-                                        <a className="hover:scale-110 duration-300 hover:text-purple-800" href="https://www.instagram.com/ken.qer/" target="_blank">
+                                        <a className="hover:scale-110 duration-300 hover:text-purple-800" href="https://www.instagram.com/ken.qer/" rel='noreferrer' target="_blank">
                                             <SiInstagram></SiInstagram>
                                         </a>
                                     </motion.div>
@@ -93,7 +93,7 @@ const Contact = () => {
                                             type: 'spring'
                                         }}
                                     >
-                                        <a className="hover:scale-110 duration-300 hover:text-gray-500" href="https://github.com/Kenqer" target="_blank">
+                                        <a className="hover:scale-110 duration-300 hover:text-gray-500" href="https://github.com/Kenqer" rel='noreferrer' target="_blank">
                                             <SiGithub></SiGithub>
                                         </a>
                                     </motion.div>
@@ -108,7 +108,7 @@ const Contact = () => {
                                             type: 'spring'
                                         }}
                                     >
-                                        <a className="hover:scale-110 duration-300 hover:text-red-500" href="https://www.youtube.com/channel/UCXG6GuBh1oHQaYM6TQ7-NRw" target="_blank">
+                                        <a className="hover:scale-110 duration-300 hover:text-red-500" href="https://www.youtube.com/channel/UCXG6GuBh1oHQaYM6TQ7-NRw" rel='noreferrer' target="_blank">
                                             <SiYoutube></SiYoutube>
                                         </a>
                                     </motion.div>
@@ -123,7 +123,7 @@ const Contact = () => {
                                             type: 'spring'
                                         }}
                                     >
-                                        <a className="hover:scale-110 duration-300 hover:text-blue-900" href="https://www.linkedin.com/in/javier-kennedi-9bb6342aa/" target="_blank">
+                                        <a className="hover:scale-110 duration-300 hover:text-blue-900" href="https://www.linkedin.com/in/javier-kennedi-9bb6342aa/" rel='noreferrer' target="_blank">
                                             <SiLinkedin></SiLinkedin>
                                         </a>
                                     </motion.div>
@@ -138,7 +138,7 @@ const Contact = () => {
                                             type: 'spring'
                                         }}
                                     >
-                                        <a className="hover:scale-110 duration-300 hover:text-blue-400" href="https://twitter.com/itisnotken" target="_blank">
+                                        <a className="hover:scale-110 duration-300 hover:text-blue-400" href="https://twitter.com/itisnotken" rel='noreferrer' target="_blank">
                                             <SiTwitter></SiTwitter>
                                         </a>
                                     </motion.div>
@@ -153,7 +153,7 @@ const Contact = () => {
                                             type: 'spring'
                                         }}
                                     >
-                                        <a className="hover:scale-110 duration-300 hover:text-sky-400" href="https://www.freelancer.com/u/JavierKennedi" target="_blank">
+                                        <a className="hover:scale-110 duration-300 hover:text-sky-400" href="https://www.freelancer.com/u/JavierKennedi" rel='noreferrer' target="_blank">
                                             <SiFreelancer></SiFreelancer>
                                         </a>
                                     </motion.div>
