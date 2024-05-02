@@ -29,8 +29,7 @@ const Home = () => {
                         <div className="z-[2]">
                             <Reveal>
                                 <h1 className="font-bold font-serif ">Hello,</h1>
-                                <h2 className="font-serif ">I'm Javier</h2>
-                                <h2 className="font-serif ">Kennedi...</h2>
+                                <h1 className="font-serif ">I'm Javier Kennedi...</h1>
                                 <div className="text-lg md:text-2xl flex flex-col ">
                                     <p className="font-mono">My goal is to help you produce websites that responsive and uphold a high standard of quality.</p>
                                 </div>
