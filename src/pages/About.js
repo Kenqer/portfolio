@@ -24,7 +24,7 @@ const About = () => {
                         viewport={{ once: true, amount: 0.2 }}
                     >
                         <div className='relative md:w-[500px] flex justify-center '>
-                            <img src="img/city.png" alt="car" />
+                            <img className="aspect-auto" src="img/city.png" alt="City Picture" />
                         </div>
                     </motion.div>
 

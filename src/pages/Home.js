@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import Reveal from "../components/utils/Reveal";
-import { SiAmazonaws, SiAndroid, SiAndroidstudio, SiChakraui, SiCpanel, SiExpo, SiExpress, SiFramer, SiFreelancer, SiGit, SiGithub, SiGithubpages, SiInstagram, SiLinkedin, SiMongodb, SiMysql,  SiReact, SiTailwindcss, SiTwitter, SiVercel, SiYoutube, SiAxios, SiJsonwebtokens } from 'react-icons/si';
+import { SiAmazonaws, SiAndroid, SiAndroidstudio, SiChakraui, SiCpanel, SiExpo, SiExpress, SiFramer, SiFreelancer, SiGit, SiGithub, SiGithubpages, SiInstagram, SiLinkedin, SiMongodb, SiMysql, SiReact, SiTailwindcss, SiTwitter, SiVercel, SiYoutube, SiAxios, SiJsonwebtokens } from 'react-icons/si';
 import { Tooltip } from '@chakra-ui/react'
 import * as LottiePlayer from "@lottiefiles/lottie-player";
 
@@ -154,7 +154,7 @@ const Home = () => {
                                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-trophy-filled w-[4.5rem] text-amber-600 hover:text-amber-900 hover:scale-110 duration-300 trophy" width="4.5rem" height="4.5rem" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M17 3a1 1 0 0 1 .993 .883l.007 .117v2.17a3 3 0 1 1 0 5.659v.171a6.002 6.002 0 0 1 -5 5.917v2.083h3a1 1 0 0 1 .117 1.993l-.117 .007h-8a1 1 0 0 1 -.117 -1.993l.117 -.007h3v-2.083a6.002 6.002 0 0 1 -4.996 -5.692l-.004 -.225v-.171a3 3 0 0 1 -3.996 -2.653l-.003 -.176l.005 -.176a3 3 0 0 1 3.995 -2.654l-.001 -2.17a1 1 0 0 1 1 -1h10zm-12 5a1 1 0 1 0 0 2a1 1 0 0 0 0 -2zm14 0a1 1 0 1 0 0 2a1 1 0 0 0 0 -2z" strokeWidth="0" fill="currentColor" /></svg>
                             </span>
                             <div className="flex flex-col">
-                                <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-amber-600 to-yellow-500 font-semibold text-5xl">Certificate</h1>
+                                <h3 className="bg-clip-text text-transparent bg-gradient-to-r from-amber-600 to-yellow-500 font-semibold text-5xl">Certificate</h3>
                                 <p className="text-xl text-black font-mono">My Awards and Achivements</p>
                             </div>
                         </div>
@@ -168,28 +168,28 @@ const Home = () => {
                             <div className="w-full h-auto group cursor-pointer border hover:border-b-8 hover:border-b-teal-600 hover:rounded-b-2xl rounded-xl flex flex-col relative px-3 pt-3 hover:scale-[103%] duration-200 shadow-lg">
                                 <a target='_blank' href="https://drive.google.com/drive/folders/1h7UUQpPJU86a8QRKQmEy3JAWzOaE3nHt?usp=drive_link">
                                     <div className="">
-                                        <img className="aspect-[16/11.25]" src="./img/seameo.webp" alt="jawa" />
+                                        <img className="aspect-[16/11.25]" src="./img/seameo.webp" alt="Seameo Certificate" />
                                     </div>
                                     <div className='px-1 py-4'>
                                         <div className='text-lg font-mono flex justify-between'>
                                             <em>Academy</em>
                                             <em>Aug 2023</em>
                                         </div>
-                                        <h1 className='font-semibold text-xl'>Seameo Qitep In Science - Web Cloud Engineering (1st Place)</h1>
+                                        <h3 className='font-semibold text-xl'>Seameo Qitep In Science - Web Cloud Engineering (1st Place)</h3>
                                     </div>
                                 </a>
                             </div>
                             <div className="w-full h-auto cursor-pointer border rounded-xl hover:border-b-8 hover:border-b-teal-600 hover:rounded-b-2xl flex flex-col relative px-3 pt-3  hover:scale-[103%] duration-200 shadow-lg">
                                 <a rel="noreferrer" target="_blank" href="https://www.w3docs.com/quiz/certificate/3/100/1704877126/Javier%20Kennedi/b5bef9956d838ff3e475f2ae3fe38799">
                                     <div className="">
-                                        <img className="aspect-[16/11.25]" src="img/c2.webp" alt="jawa" />
+                                        <img className="aspect-[16/11.25]" src="img/c2.webp" alt="HTML BASIC Certificate" />
                                     </div>
                                     <div className='px-1 py-4'>
                                         <div className='text-lg font-mono flex justify-between'>
                                             <em>Non-Academy</em>
                                             <em>Jan 2024</em>
                                         </div>
-                                        <h1 className='font-semibold text-xl'>W3Docs - HTML5 Basic</h1>
+                                        <h3 className='font-semibold text-xl'>W3Docs - HTML5 Basic</h3>
                                     </div>
                                 </a>
                             </div>
@@ -201,31 +201,31 @@ const Home = () => {
                                             <em>Non-Academy</em>
                                             <em>Jan 2024</em>
                                         </div>
-                                        <h1 className='font-semibold text-xl'>W3Docs - PHP Basic</h1>
+                                        <h3 className='font-semibold text-xl'>W3Docs - PHP Basic</h3>
                                     </div>
                                 </a>
                             </div>
                             <div className="w-full h-auto cursor-pointer border  rounded-xl hover:border-b-8 hover:border-b-teal-600 hover:rounded-b-2xl flex flex-col relative px-3 pt-3  hover:scale-[103%] duration-200 shadow-lg">
                                 <a target='_blank' href="https://www.w3docs.com/quiz/certificate/5/100/1704876717/Javier%20Kennedi/32ea25c2344d1bbf5f256bfc5a63c359">
-                                    <img className="aspect-[16/11.25]" src="/img/c3.webp" alt="jawa" />
+                                    <img className="aspect-[16/11.25]" src="/img/c3.webp" alt="CSS BASIC Certificate" />
                                     <div className='px-1 py-4'>
                                         <div className='text-lg font-mono flex justify-between'>
                                             <em>Non-Academy</em>
                                             <em>Jan 2024</em>
                                         </div>
-                                        <h1 className='font-semibold text-xl'>W3Docs - CSS Basic</h1>
+                                        <h3 className='font-semibold text-xl'>W3Docs - CSS Basic</h3>
                                     </div>
                                 </a>
                             </div>
                             <div className="w-full h-auto cursor-pointer border  rounded-xl hover:border-b-8 hover:border-b-teal-600 hover:rounded-b-2xl flex flex-col relative px-3 pt-3  hover:scale-[103%] duration-200 shadow-lg">
                                 <a target='_blank' href="https://www.dicoding.com/certificates/EYX403EYWPDL">
-                                    <img className="aspect-[16/11.25]" src="/img/dicoding1.webp" alt="jawa" />
+                                    <img className="aspect-[16/11.25]" src="/img/dicoding1.webp" alt="Certificate Dicoding" />
                                     <div className='px-1 py-4'>
                                         <div className='text-lg font-mono flex justify-between'>
                                             <em>Academy</em>
                                             <em>Mar 2024</em>
                                         </div>
-                                        <h1 className='font-semibold text-xl'>Dicoding Academy - Web Developement Basic</h1>
+                                        <h3 className='font-semibold text-xl'>Dicoding Academy - Web Developement Basic</h3>
                                     </div>
                                 </a>
                             </div>
@@ -503,7 +503,7 @@ const Home = () => {
                             </span>
                             <div className="flex flex-col">
                                 <div>
-                                    <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-yellow-300 font-semibold text-5xl">Project</h1>
+                                    <h3 className="bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-yellow-300 font-semibold text-5xl">Project</h3>
                                 </div>
                                 <div>
                                     <p className="text-xl text-black font-mono">My Ongoing and Past Project</p>
@@ -517,83 +517,90 @@ const Home = () => {
                         viewport={{ once: true, amount: 0.2 }}
                     >
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-[2%]">
-                            <div className="w-full h-auto overflow-hidden group cursor-pointer border rounded-xl flex flex-col relative hover:scale-[103%] duration-200 shadow-lg pb-4 md:pb-0">
+                            <article className="w-full h-auto overflow-hidden group cursor-pointer border rounded-xl flex flex-col relative hover:scale-[103%] duration-200 shadow-lg pb-4 md:pb-0">
                                 <a target='_blank' href="https://flixflare.vercel.app">
-                                    <div className="rounded-b-xl duration-200">
-                                        <img className="w-full h-full aspect-[16/11.25]" src="./img/flix.webp" alt="jawa" />
-                                    </div>
-                                    <div className='px-7 pt-4'>
-                                        <div className="aspect-[12/6]">
-                                            <div className='text-lg font-mono flex justify-between'>
-                                                <em>Work in Progress</em>
-                                                <em>Jan 2024</em>
-                                            </div>
-                                            <div className="flex flex-col gap-3 pb-3">
-                                                <h1 className='font-semibold text-xl'>FlixFlare (Movie App)</h1>
-                                                <p className="text-gray-500">I tried to create a movie website to only stream the movie for free but, it look like, it still have a lot things to work on. Like fetching an
-                                                    API and make it more responsive and beautiful. Also I don't have a lot of time to work on this website, so if I have  a lot of free time I will finish this project. Stay tuned. </p>
-                                            </div>
+                                    <figure>
+                                        <div className="rounded-b-xl duration-200">
+                                            <img className="w-full h-full aspect-[16/11.25]" src="./img/flix.webp" alt="Movie App" />
                                         </div>
-                                        <div className="flex flex-row items-end gap-3">
-                                            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-react w-[35px] h-[35px] text-blue-400" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M6.306 8.711c-2.602 .723 -4.306 1.926 -4.306 3.289c0 2.21 4.477 4 10 4c.773 0 1.526 -.035 2.248 -.102" /><path d="M17.692 15.289c2.603 -.722 4.308 -1.926 4.308 -3.289c0 -2.21 -4.477 -4 -10 -4c-.773 0 -1.526 .035 -2.25 .102" /><path d="M6.305 15.287c-.676 2.615 -.485 4.693 .695 5.373c1.913 1.105 5.703 -1.877 8.464 -6.66c.387 -.67 .733 -1.339 1.036 -2" /><path d="M17.694 8.716c.677 -2.616 .487 -4.696 -.694 -5.376c-1.913 -1.105 -5.703 1.877 -8.464 6.66c-.387 .67 -.733 1.34 -1.037 2" /><path d="M12 5.424c-1.925 -1.892 -3.82 -2.766 -5 -2.084c-1.913 1.104 -1.226 5.877 1.536 10.66c.386 .67 .793 1.304 1.212 1.896" /><path d="M12 18.574c1.926 1.893 3.821 2.768 5 2.086c1.913 -1.104 1.226 -5.877 -1.536 -10.66c-.375 -.65 -.78 -1.283 -1.212 -1.897" /><path d="M11.5 12.866a1 1 0 1 0 1 -1.732a1 1 0 0 0 -1 1.732z" /></svg>
-                                            <i><svg className='w-[35px] h-[35px] fill-blue-400' height="24" viewBox="0 0 24 24" width="34" xmlns="http://www.w3.org/2000/svg"><path d="M18.5 9.51a4.22 4.22 0 0 1-1.91-1.34A5.77 5.77 0 0 0 12 6a4.72 4.72 0 0 0-5 4 3.23 3.23 0 0 1 3.5-1.49 4.32 4.32 0 0 1 1.91 1.35A5.77 5.77 0 0 0 17 12a4.72 4.72 0 0 0 5-4 3.2 3.2 0 0 1-3.5 1.51zm-13 4.98a4.22 4.22 0 0 1 1.91 1.34A5.77 5.77 0 0 0 12 18a4.72 4.72 0 0 0 5-4 3.23 3.23 0 0 1-3.5 1.49 4.32 4.32 0 0 1-1.91-1.35A5.8 5.8 0 0 0 7 12a4.72 4.72 0 0 0-5 4 3.2 3.2 0 0 1 3.5-1.51z" /></svg></i>
-                                        </div>
-                                    </div>
+                                        <figcaption className='px-7 pt-4'>
+                                            <div className="aspect-[12/6]">
+                                                <div className='text-lg font-mono flex justify-between'>
+                                                    <em>Work in Progress</em>
+                                                    <em>Jan 2024</em>
+                                                </div>
+                                                <div className="flex flex-col gap-3 pb-3">
+                                                    <h3 className='font-semibold text-xl'>FlixFlare (Movie App)</h3>
+                                                    <p className="text-gray-500">I tried to create a movie website to only stream the movie for free but, it look like, it still have a lot things to work on. Like fetching an
+                                                        API and make it more responsive and beautiful. Also I don't have a lot of time to work on this website, so if I have  a lot of free time I will finish this project. Stay tuned. </p>
+                                                </div>
+                                            </div>
+                                            <div className="flex flex-row items-end gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-react w-[35px] h-[35px] text-blue-400" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M6.306 8.711c-2.602 .723 -4.306 1.926 -4.306 3.289c0 2.21 4.477 4 10 4c.773 0 1.526 -.035 2.248 -.102" /><path d="M17.692 15.289c2.603 -.722 4.308 -1.926 4.308 -3.289c0 -2.21 -4.477 -4 -10 -4c-.773 0 -1.526 .035 -2.25 .102" /><path d="M6.305 15.287c-.676 2.615 -.485 4.693 .695 5.373c1.913 1.105 5.703 -1.877 8.464 -6.66c.387 -.67 .733 -1.339 1.036 -2" /><path d="M17.694 8.716c.677 -2.616 .487 -4.696 -.694 -5.376c-1.913 -1.105 -5.703 1.877 -8.464 6.66c-.387 .67 -.733 1.34 -1.037 2" /><path d="M12 5.424c-1.925 -1.892 -3.82 -2.766 -5 -2.084c-1.913 1.104 -1.226 5.877 1.536 10.66c.386 .67 .793 1.304 1.212 1.896" /><path d="M12 18.574c1.926 1.893 3.821 2.768 5 2.086c1.913 -1.104 1.226 -5.877 -1.536 -10.66c-.375 -.65 -.78 -1.283 -1.212 -1.897" /><path d="M11.5 12.866a1 1 0 1 0 1 -1.732a1 1 0 0 0 -1 1.732z" /></svg>
+                                                <i><svg className='w-[35px] h-[35px] fill-blue-400' height="24" viewBox="0 0 24 24" width="34" xmlns="http://www.w3.org/2000/svg"><path d="M18.5 9.51a4.22 4.22 0 0 1-1.91-1.34A5.77 5.77 0 0 0 12 6a4.72 4.72 0 0 0-5 4 3.23 3.23 0 0 1 3.5-1.49 4.32 4.32 0 0 1 1.91 1.35A5.77 5.77 0 0 0 17 12a4.72 4.72 0 0 0 5-4 3.2 3.2 0 0 1-3.5 1.51zm-13 4.98a4.22 4.22 0 0 1 1.91 1.34A5.77 5.77 0 0 0 12 18a4.72 4.72 0 0 0 5-4 3.23 3.23 0 0 1-3.5 1.49 4.32 4.32 0 0 1-1.91-1.35A5.8 5.8 0 0 0 7 12a4.72 4.72 0 0 0-5 4 3.2 3.2 0 0 1 3.5-1.51z" /></svg></i>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
                                 </a>
-                            </div>
-                            <div className="w-full h-auto overflow-hidden group cursor-pointer border rounded-xl flex flex-col relative hover:scale-[103%] duration-200 shadow-lg pb-10">
+                            </article>
+                            <article className="w-full h-auto overflow-hidden group cursor-pointer border rounded-xl flex flex-col relative hover:scale-[103%] duration-200 shadow-lg pb-10">
                                 <a target='_blank' href="https://legoin.org">
-                                    <div className="rounded-b-xl duration-200">
-                                        <img className="w-full h-full aspect-[16/11.25]" src="./img/port.webp" alt="jawa" />
-                                    </div>
-                                    <div className='px-7 pt-4'>
-                                        <div className="aspect-[12/6]">
-                                            <div className='text-lg font-mono flex justify-between'>
-                                                <em>Ongoing</em>
-                                                <em>Jan 2024</em>
-                                            </div>
-                                            <div className="flex flex-col gap-3 pb-3">
-                                                <h1 className='font-semibold text-xl'>Personal Website</h1>
-                                                <p className="text-gray-500">I create portfolio website projects with several features such as contacts, skills, and projects</p>
-                                            </div>
+                                    <figure>
+                                        <div className="rounded-b-xl duration-200">
+                                            <img className="w-full h-full aspect-[16/11.25]" src="./img/port.webp" alt="Portfolio Website" />
                                         </div>
-                                        <div className="flex flex-row items-end gap-3">
-                                            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-react w-[35px] h-[35px] text-blue-400" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M6.306 8.711c-2.602 .723 -4.306 1.926 -4.306 3.289c0 2.21 4.477 4 10 4c.773 0 1.526 -.035 2.248 -.102" /><path d="M17.692 15.289c2.603 -.722 4.308 -1.926 4.308 -3.289c0 -2.21 -4.477 -4 -10 -4c-.773 0 -1.526 .035 -2.25 .102" /><path d="M6.305 15.287c-.676 2.615 -.485 4.693 .695 5.373c1.913 1.105 5.703 -1.877 8.464 -6.66c.387 -.67 .733 -1.339 1.036 -2" /><path d="M17.694 8.716c.677 -2.616 .487 -4.696 -.694 -5.376c-1.913 -1.105 -5.703 1.877 -8.464 6.66c-.387 .67 -.733 1.34 -1.037 2" /><path d="M12 5.424c-1.925 -1.892 -3.82 -2.766 -5 -2.084c-1.913 1.104 -1.226 5.877 1.536 10.66c.386 .67 .793 1.304 1.212 1.896" /><path d="M12 18.574c1.926 1.893 3.821 2.768 5 2.086c1.913 -1.104 1.226 -5.877 -1.536 -10.66c-.375 -.65 -.78 -1.283 -1.212 -1.897" /><path d="M11.5 12.866a1 1 0 1 0 1 -1.732a1 1 0 0 0 -1 1.732z" /></svg>
-                                            <i><svg className='w-[35px] h-[35px] fill-blue-400' height="24" viewBox="0 0 24 24" width="34" xmlns="http://www.w3.org/2000/svg"><path d="M18.5 9.51a4.22 4.22 0 0 1-1.91-1.34A5.77 5.77 0 0 0 12 6a4.72 4.72 0 0 0-5 4 3.23 3.23 0 0 1 3.5-1.49 4.32 4.32 0 0 1 1.91 1.35A5.77 5.77 0 0 0 17 12a4.72 4.72 0 0 0 5-4 3.2 3.2 0 0 1-3.5 1.51zm-13 4.98a4.22 4.22 0 0 1 1.91 1.34A5.77 5.77 0 0 0 12 18a4.72 4.72 0 0 0 5-4 3.23 3.23 0 0 1-3.5 1.49 4.32 4.32 0 0 1-1.91-1.35A5.8 5.8 0 0 0 7 12a4.72 4.72 0 0 0-5 4 3.2 3.2 0 0 1 3.5-1.51z" /></svg></i>
-                                        </div>
-                                    </div>
+                                        <figcaption className='px-7 pt-4'>
+                                            <div className="aspect-[12/6]">
+                                                <div className='text-lg font-mono flex justify-between'>
+                                                    <em>Ongoing</em>
+                                                    <em>Jan 2024</em>
+                                                </div>
+                                                <div className="flex flex-col gap-3 pb-3">
+                                                    <h3 className='font-semibold text-xl'>Personal Website</h3>
+                                                    <p className="text-gray-500">I create portfolio website projects with several features such as contacts, skills, and projects</p>
+                                                </div>
+                                            </div>
+                                            <div className="flex flex-row items-end gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-react w-[35px] h-[35px] text-blue-400" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M6.306 8.711c-2.602 .723 -4.306 1.926 -4.306 3.289c0 2.21 4.477 4 10 4c.773 0 1.526 -.035 2.248 -.102" /><path d="M17.692 15.289c2.603 -.722 4.308 -1.926 4.308 -3.289c0 -2.21 -4.477 -4 -10 -4c-.773 0 -1.526 .035 -2.25 .102" /><path d="M6.305 15.287c-.676 2.615 -.485 4.693 .695 5.373c1.913 1.105 5.703 -1.877 8.464 -6.66c.387 -.67 .733 -1.339 1.036 -2" /><path d="M17.694 8.716c.677 -2.616 .487 -4.696 -.694 -5.376c-1.913 -1.105 -5.703 1.877 -8.464 6.66c-.387 .67 -.733 1.34 -1.037 2" /><path d="M12 5.424c-1.925 -1.892 -3.82 -2.766 -5 -2.084c-1.913 1.104 -1.226 5.877 1.536 10.66c.386 .67 .793 1.304 1.212 1.896" /><path d="M12 18.574c1.926 1.893 3.821 2.768 5 2.086c1.913 -1.104 1.226 -5.877 -1.536 -10.66c-.375 -.65 -.78 -1.283 -1.212 -1.897" /><path d="M11.5 12.866a1 1 0 1 0 1 -1.732a1 1 0 0 0 -1 1.732z" /></svg>
+                                                <i><svg className='w-[35px] h-[35px] fill-blue-400' height="24" viewBox="0 0 24 24" width="34" xmlns="http://www.w3.org/2000/svg"><path d="M18.5 9.51a4.22 4.22 0 0 1-1.91-1.34A5.77 5.77 0 0 0 12 6a4.72 4.72 0 0 0-5 4 3.23 3.23 0 0 1 3.5-1.49 4.32 4.32 0 0 1 1.91 1.35A5.77 5.77 0 0 0 17 12a4.72 4.72 0 0 0 5-4 3.2 3.2 0 0 1-3.5 1.51zm-13 4.98a4.22 4.22 0 0 1 1.91 1.34A5.77 5.77 0 0 0 12 18a4.72 4.72 0 0 0 5-4 3.23 3.23 0 0 1-3.5 1.49 4.32 4.32 0 0 1-1.91-1.35A5.8 5.8 0 0 0 7 12a4.72 4.72 0 0 0-5 4 3.2 3.2 0 0 1 3.5-1.51z" /></svg></i>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
                                 </a>
-                            </div>
-                            <div className="w-full h-auto overflow-hidden group cursor-pointer border rounded-xl flex flex-col relative hover:scale-[103%] duration-200 shadow-lg pb-10">
+                            </article>
+                            <article className="w-full h-auto overflow-hidden group cursor-pointer border rounded-xl flex flex-col relative hover:scale-[103%] duration-200 shadow-lg pb-10">
                                 <a href="#">
-                                    <div className="rounded-b-xl duration-200">
-                                        <img className="w-full h-full aspect-[16/11.25]" src="./img/blog.webp" alt="jawa" />
-                                    </div>
-                                    <div className='px-7 pt-4'>
-                                        <div className="aspect-[12/6]">
-                                            <div className='text-lg font-mono flex justify-between'>
-                                                <em>Semi-finish</em>
-                                                <em>Mar 2024</em>
-                                            </div>
-                                            <div className="flex flex-col gap-3 pb-3">
-                                                <h1 className='font-semibold text-xl'>Blog Application</h1>
-                                                <p className="text-gray-500">I've developed the backend using Express.js for my blog application built with React Native. It includes several features such as creating articles and user account registration to save and post articles.</p>
-                                            </div>
+                                    <figure>
+                                        <div className="rounded-b-xl duration-200">
+                                            <img className="w-full h-full aspect-[16/11.25]" src="./img/blog.webp" alt="Blog App With React Native" />
                                         </div>
-                                        <div className="flex flex-row items-center gap-3">
-                                            <span className="flex flex-col items-center">
-                                                <SiReact className="text-xl text-sky-400"></SiReact>
-                                                <span className="text-[10px] font-[jawa] font-bold text-sky-400">Native</span>
-                                            </span>
-                                            <SiTailwindcss className="text-3xl text-blue-400"></SiTailwindcss>
-                                            <SiAndroidstudio className="text-3xl text-green-400"></SiAndroidstudio>
-                                            <SiExpress className="text-3xl text-black"></SiExpress>
-                                            <SiMongodb className="text-3xl text-green-600"></SiMongodb>
-                                            <SiAxios className="text-3xl text-black"></SiAxios>
-                                        </div>
-                                    </div>
+                                        <figcaption className='px-7 pt-4'>
+                                            <div className="aspect-[12/6]">
+                                                <div className='text-lg font-mono flex justify-between'>
+                                                    <em>Semi-finish</em>
+                                                    <em>Mar 2024</em>
+                                                </div>
+                                                <div className="flex flex-col gap-3 pb-3">
+                                                    <h3 className='font-semibold text-xl'>Blog Application</h3>
+                                                    <p className="text-gray-500">I've developed the backend using Express.js for my blog application built with React Native. It includes several features such as creating articles and user account registration to save and post articles.</p>
+                                                </div>
+                                            </div>
+                                            <div className="flex flex-row items-center gap-3">
+                                                <span className="flex flex-col items-center">
+                                                    <SiReact className="text-xl text-sky-400"></SiReact>
+                                                    <span className="text-[10px] font-[jawa] font-bold text-sky-400">Native</span>
+                                                </span>
+                                                <SiTailwindcss className="text-3xl text-blue-400"></SiTailwindcss>
+                                                <SiAndroidstudio className="text-3xl text-green-400"></SiAndroidstudio>
+                                                <SiExpress className="text-3xl text-black"></SiExpress>
+                                                <SiMongodb className="text-3xl text-green-600"></SiMongodb>
+                                                <SiAxios className="text-3xl text-black"></SiAxios>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+
                                 </a>
-                            </div>
+                            </article>
                         </div>
                     </motion.div>
                 </section>
