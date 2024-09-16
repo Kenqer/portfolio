@@ -14,7 +14,7 @@ import devOps from "../common/devOps";
 import certificate from "../common/certificate";
 import { useState } from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-
+import { TbCertificate } from "react-icons/tb";
 
 const Home = () => {
     const iconList = {
@@ -154,16 +154,13 @@ const Home = () => {
                 </div>
             </header>
             <main className="my-[80vw] md:my-[20vw] flex flex-col gap-44">
-                <section id="certificate" className="px-[10%] gap-8 flex flex-col">
-                    <div className="w-full flex">
-                        <div className="flex gap-3 z-[2]">
-                            <span className="">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-trophy-filled w-[4.5rem] text-amber-600 hover:text-amber-900 hover:scale-110 duration-300 trophy" width="4.5rem" height="4.5rem" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M17 3a1 1 0 0 1 .993 .883l.007 .117v2.17a3 3 0 1 1 0 5.659v.171a6.002 6.002 0 0 1 -5 5.917v2.083h3a1 1 0 0 1 .117 1.993l-.117 .007h-8a1 1 0 0 1 -.117 -1.993l.117 -.007h3v-2.083a6.002 6.002 0 0 1 -4.996 -5.692l-.004 -.225v-.171a3 3 0 0 1 -3.996 -2.653l-.003 -.176l.005 -.176a3 3 0 0 1 3.995 -2.654l-.001 -2.17a1 1 0 0 1 1 -1h10zm-12 5a1 1 0 1 0 0 2a1 1 0 0 0 0 -2zm14 0a1 1 0 1 0 0 2a1 1 0 0 0 0 -2z" strokeWidth="0" fill="currentColor" /></svg>
-                            </span>
-                            <div className="flex flex-col">
-                                <h3 className="bg-clip-text text-transparent bg-gradient-to-r from-amber-600 to-yellow-500 font-semibold text-5xl">Certificate</h3>
-                                <p className="text-xl text-black font-mono">My Awards and Achivements</p>
-                            </div>
+                <section id="certificate" className="px-[10%] gap-8 flex flex-col items-center">
+                    <div className="flex items-center gap-3 z-[2]">
+                        <TbCertificate className="w-20 h-20 text-amber-600 hover:text-amber-900 hover:scale-110 duration-300 trophy" />
+
+                        <div className="flex flex-col">
+                            <h3 className="bg-clip-text text-transparent bg-gradient-to-r from-amber-600 to-yellow-500 font-semibold text-5xl">Certificate</h3>
+                            <p className="text-xl text-black font-mono">My Awards and Achivements</p>
                         </div>
                     </div>
                     <motion.div
@@ -333,7 +330,7 @@ const Home = () => {
                                     key={index}
                                     className="w-full h-auto overflow-hidden group cursor-pointer border rounded-xl flex flex-col relative hover:scale-[103%] duration-200 shadow-lg pb-4 md:pb-0"
                                 >
-                                    <a target="_blank" rel="noopener noreferrer" href="https://flixflare.vercel.app">
+                                    <a target="_blank" href="https://bbyshintowing.vercel.app">
                                         <figure>
                                             <div className="rounded-b-xl duration-200">
                                                 <img className="w-full h-full aspect-[16/11.25]" src={`./img/project/${project.image}`} alt={project.title} />

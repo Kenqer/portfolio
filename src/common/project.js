@@ -2,7 +2,7 @@ import { SiAxios, SiExpress, SiJsonwebtokens, SiMysql, SiReact, SiTailwindcss, S
 
 const projects = [
   {
-    link: "",
+    link: "https://bbyshintowing.vercel.app",
     image: 'bbyshin.webp',
     status: 'Finished',
     date: 'Jul 2024',
