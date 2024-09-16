@@ -8,6 +8,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 import { Analytics } from "@vercel/analytics/react"
 import {} from 'framer-motion'
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import CertificateSection from './pages/CertificateSection';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
                 </Route>
                 <Route path="/contact">
                   <Contact />
+                </Route>
+                <Route path="/certificate">
+                  <CertificateSection />
                 </Route>
               </Switch>
             </div>

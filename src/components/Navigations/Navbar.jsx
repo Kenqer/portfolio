@@ -3,14 +3,26 @@ import React, { useState } from 'react';
 
 const Navbar = () => {
     let [open, setOpen] = useState(false);
+
+    const handleScroll = () => {
+        window.scrollTo(
+            {
+                top: 0,
+                behavior: 'smooth'
+            }
+        )
+    }
+    
     return (
         <header className="w-full">
             <nav className="bg-transparent ">
                 <div className="flex  flex-row items-center justify-between">
                     <div className="ml-4 cursor-pointer">
-                        <a href="#legoin">
-                            <img className="w-20 h-full" src="./img/logo.webp" alt="" />
-                        </a>
+                        <button onClick={handleScroll}>
+                            <Link to="/">
+                                <img className="w-20 h-full" src="./img/logo.webp" alt="" />
+                            </Link>
+                        </button>
                     </div>
                     <div className="py-10">
                         <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white
