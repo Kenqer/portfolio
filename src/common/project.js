@@ -1,4 +1,4 @@
-import { SiAxios, SiExpress, SiJsonwebtokens, SiMysql, SiReact, SiTailwindcss, SiVercel } from "react-icons/si";
+import { SiAxios, SiChakraui, SiExpress, SiFramer, SiJsonwebtokens, SiMysql, SiReact, SiTailwindcss, SiVercel } from "react-icons/si";
 
 const projects = [
   {
@@ -17,7 +17,22 @@ const projects = [
       { icon: SiAxios, colorClass: 'text-black' },          // Axios: Blue
       { icon: SiJsonwebtokens, colorClass: 'text-black' }  // JWT: Green
     ]
-  }
+  },
+  {
+    link: "https://legoin.org",
+    image: 'portfolio.webp',
+    status: 'Ongoing',
+    date: 'Dec 2023',
+    title: 'Legoin (Portfolio)',
+    description: "I create responsive website for my own portfolio using the React.js framework. The site features a user-friendly interface, and displaying my skills, certificate that I own, and all the projects that I was worked on.",
+    program: [
+      { icon: SiReact, colorClass: 'text-blue-500' },          // React: Blue
+      { icon: SiTailwindcss, colorClass: 'text-teal-400' },    // TailwindCSS: Teal
+      { icon: SiVercel, colorClass: 'text-black' },            // Vercel: Black
+      { icon: SiChakraui, colorClass: 'text-green-300' },            // Vercel: Black
+      { icon: SiFramer, colorClass: 'text-black' },            // Vercel: Black
+    ]
+  },
 ];
 
 export default projects;

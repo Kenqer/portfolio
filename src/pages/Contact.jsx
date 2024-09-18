@@ -1,8 +1,7 @@
 import emailjs from '@emailjs/browser';
 import React, { useRef } from "react";
-import { motion, useInView, useAnimation, spring } from "framer-motion"
-import * as LottiePlayer from "@lottiefiles/lottie-player";
-import { SiFreelancer, SiGithub, SiInstagram, SiLinkedin, SiTwitter, SiYoutube } from 'react-icons/si'
+import { motion } from "framer-motion"
+import socials from '../common/socials';
 
 
 const Contact = () => {
@@ -66,97 +65,25 @@ const Contact = () => {
                             </label>
                             <div className='flex flex-row items-center gap-5'>
                                 <button type="submit" value="Send" className='px-10 py-1 text-xl font-semibold font-[jawa] bg-teal-600 rounded-xl shadow-xl hover:scale-110 hover:bg-teal-200 duration-200' >Send</button>
-                                <div className="flex text-2xl md:text-2xl gap-4">
-                                    <motion.div
-                                        variants={iconList}
-                                        initial="hidd"
-                                        animate="visi"
-                                        transition={{
-                                            delay: 0.2,
-                                            duration: 1,
-                                            bounce: 0.55,
-                                            type: 'spring'
-                                        }}
-                                    >
-                                        <a className="hover:scale-110 duration-300 hover:text-purple-800" href="https://www.instagram.com/ken.qer/" rel='noreferrer' target="_blank">
-                                            <SiInstagram></SiInstagram>
-                                        </a>
-                                    </motion.div>
-                                    <motion.div
-                                        variants={iconList}
-                                        initial="hidd"
-                                        animate="visi"
-                                        transition={{
-                                            delay: 0.4,
-                                            duration: 1,
-                                            bounce: 0.55,
-                                            type: 'spring'
-                                        }}
-                                    >
-                                        <a className="hover:scale-110 duration-300 hover:text-gray-500" href="https://github.com/Kenqer" rel='noreferrer' target="_blank">
-                                            <SiGithub></SiGithub>
-                                        </a>
-                                    </motion.div>
-                                    <motion.div
-                                        variants={iconList}
-                                        initial="hidd"
-                                        animate="visi"
-                                        transition={{
-                                            delay: 0.6,
-                                            duration: 1,
-                                            bounce: 0.55,
-                                            type: 'spring'
-                                        }}
-                                    >
-                                        <a className="hover:scale-110 duration-300 hover:text-red-500" href="https://www.youtube.com/channel/UCXG6GuBh1oHQaYM6TQ7-NRw" rel='noreferrer' target="_blank">
-                                            <SiYoutube></SiYoutube>
-                                        </a>
-                                    </motion.div>
-                                    <motion.div
-                                        variants={iconList}
-                                        initial="hidd"
-                                        animate="visi"
-                                        transition={{
-                                            delay: 0.8,
-                                            duration: 1,
-                                            bounce: 0.55,
-                                            type: 'spring'
-                                        }}
-                                    >
-                                        <a className="hover:scale-110 duration-300 hover:text-blue-900" href="https://www.linkedin.com/in/javier-kennedi-9bb6342aa/" rel='noreferrer' target="_blank">
-                                            <SiLinkedin></SiLinkedin>
-                                        </a>
-                                    </motion.div>
-                                    <motion.div
-                                        variants={iconList}
-                                        initial="hidd"
-                                        animate="visi"
-                                        transition={{
-                                            delay: 1,
-                                            duration: 1,
-                                            bounce: 0.55,
-                                            type: 'spring'
-                                        }}
-                                    >
-                                        <a className="hover:scale-110 duration-300 hover:text-blue-400" href="https://twitter.com/itisnotken" rel='noreferrer' target="_blank">
-                                            <SiTwitter></SiTwitter>
-                                        </a>
-                                    </motion.div>
-                                    <motion.div
-                                        variants={iconList}
-                                        initial="hidd"
-                                        animate="visi"
-                                        transition={{
-                                            delay: 1.2,
-                                            duration: 1,
-                                            bounce: 0.55,
-                                            type: 'spring'
-                                        }}
-                                    >
-                                        <a className="hover:scale-110 duration-300 hover:text-sky-400" href="https://www.freelancer.com/u/JavierKennedi" rel='noreferrer' target="_blank">
-                                            <SiFreelancer></SiFreelancer>
-                                        </a>
-                                    </motion.div>
+                                <div className="flex text-2xl md:text-4xl gap-4 items-center">
+                                    {socials.map((item, index) => (
+                                        <motion.div
+                                            key={index}
+                                            variants={iconList}
+                                            initial="hidd"
+                                            animate="visi"
+                                            transition={{
+                                                delay: item.delay,
+                                                duration: 1.2,
+                                                bounce: 0.55,
+                                                type: 'spring'
+                                            }}
+                                        >
+                                            <a className={`hover:scale-110 duration-300 ${item.colorClass}`} href={item.link} rel="noreferrer" target="_blank">
+                                                <item.icon />
+                                            </a>
+                                        </motion.div>
+                                    ))}
                                 </div>
                             </div>
                         </div>
