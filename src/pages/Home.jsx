@@ -38,7 +38,7 @@ const Home = () => {
                     <div className="md:w-1/2 w-full h-full md:h-full relative overflow-hidden md:static md:overflow-visible flex flex-col justify-center px-[10%] gap-4 text-5xl lg:text-6xl xl:text-7xl ">
                         <Reveal>
                             <h1 className="font-serif ">My Name is,</h1>
-                            <h1 className="font-bold font-serif ">I'm Javier Kennedi...</h1>
+                            <h1 className="font-bold font-serif ">Javier Kennedi...</h1>
                             <div className="text-lg md:text-xl lg:text-2xl flex flex-col ">
                                 <p className="font-mono">My goal is to help you produce websites that responsive and uphold a high standard of quality.</p>
                             </div>
