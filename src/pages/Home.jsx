@@ -14,6 +14,7 @@ import certificate from "../common/certificate";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { TbCertificate } from "react-icons/tb";
 import socials from "../common/socials";
+import * as LottiePlayer from "@lottiefiles/lottie-player";
 
 const Home = () => {
     const iconList = {

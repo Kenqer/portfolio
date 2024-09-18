@@ -2,6 +2,7 @@ import emailjs from '@emailjs/browser';
 import React, { useRef } from "react";
 import { motion } from "framer-motion"
 import socials from '../common/socials';
+import * as LottiePlayer from "@lottiefiles/lottie-player";
 
 
 const Contact = () => {
