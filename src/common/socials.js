@@ -9,13 +9,13 @@ const socials = [
     },
     {
         link: "https://www.freelancer.co.id/u/JavierKennedi",
-        delay: 0.4,
+        delay: 0.8,
         icon: SiFreelancer,
         colorClass: "hover:text-blue-400"
     },
     {
         link: "https://www.fiverr.com/japerl",
-        delay: 0.6,
+        delay: 1.4,
         icon: SiFiverr,
         colorClass: "hover:text-green-300"
     },

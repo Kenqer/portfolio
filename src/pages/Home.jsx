@@ -21,7 +21,19 @@ const Home = () => {
         hidd: {
             opacity: 0,
             filter: "blur(5px)",
-            y: 35
+            y: 40
+        },
+        visi: {
+            opacity: 1,
+            filter: "blur(0px)",
+            y: 0,
+        }
+    }
+    const techList = {
+        hidd: {
+            opacity: 0,
+            filter: "blur(5px)",
+            y: 40
         },
         visi: {
             opacity: 1,
@@ -40,7 +52,7 @@ const Home = () => {
                             <h1 className="font-serif ">My Name is,</h1>
                             <h1 className="font-bold font-serif ">Javier Kennedi...</h1>
                             <div className="text-lg md:text-xl lg:text-2xl flex flex-col ">
-                                <p className="font-mono">My goal is to help you produce websites that responsive and uphold a high standard of quality.</p>
+                                <p className="font-[jetbrain]">My goal is to help you produce websites that responsive and uphold a high standard of quality.</p>
                             </div>
                         </Reveal>
                         <div className="flex text-2xl md:text-4xl gap-4 items-center">
@@ -124,25 +136,36 @@ const Home = () => {
                     </button>
 
                 </section>
-                <Reveal>
-                    <section id="skills" className="md:px-[10%] flex flex-row md:justify-between items-center">
-                        <div className="flex flex-col md:w-1/2 w-full z-[2] px-[10%] md:px-0">
-                            <div className="w-full flex gap-3 ">
-                                <span className="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-settings chip w-[4.5rem] text-fuchsia-400 hover:text-fuchsia-900 hover:scale-110 duration-300" width="4.5rem" height="4.5rem" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
-                                </span>
-                                <div className="flex flex-col">
-                                    <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-400 to-pink-900 font-semibold text-5xl">Skills</h1>
-                                    <p className="text-xl text-black font-mono">List</p>
-                                </div>
+                <section id="skills" className="md:px-[10%] flex flex-row md:justify-between items-center">
+                    <div className="flex flex-col md:w-1/2 w-full z-[2] px-[10%] md:px-0">
+                        <div className="w-full flex gap-3 ">
+                            <span className="">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-settings chip w-[4.5rem] text-fuchsia-400 hover:text-fuchsia-900 hover:scale-110 duration-300" width="4.5rem" height="4.5rem" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
+                            </span>
+                            <div className="flex flex-col">
+                                <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-400 to-pink-900 font-semibold text-5xl">Skills</h1>
+                                <p className="text-xl text-black font-mono">List</p>
                             </div>
-                            <div className='flex flex-col pt-[2%]'>
-                                <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
-                                    <IoLanguage />
-                                    Language
-                                </span>
-                                <ul className='flex flex-wrap gap-6  py-5'>
-                                    {language.map((lang, index) => (
+                        </div>
+                        <div className='flex flex-col pt-[2%]'>
+                            <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
+                                <IoLanguage />
+                                Language
+                            </span>
+                            <ul className='flex flex-wrap gap-6  py-5'>
+                                {language.map((lang, index) => (
+                                    <motion.div
+                                        key={index}
+                                        variants={techList}
+                                        initial="hidd"
+                                        whileInView="visi"
+                                        transition={{
+                                            delay: lang.delay,
+                                            duration: 1.5,
+                                            bounce: 0.55,
+                                            type: 'spring'
+                                        }}
+                                    >
                                         <li key={index} className={lang.className}>
                                             <Tooltip label={lang.label} hasArrow>
                                                 <span>
@@ -150,89 +173,145 @@ const Home = () => {
                                                 </span>
                                             </Tooltip>
                                         </li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div className='flex flex-col pt-[2%]'>
-                                <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
-                                    <FaIcons />
-                                    Frontend
-                                </span>
-                                <ul className='flex flex-wrap gap-4 text-5xl py-5'>
-                                    {frontend.map((tech, index) => (
-                                        <li key={index} className={`${tech.className}`}>
-                                            <Tooltip label={tech.label} hasArrow>
-                                                <span>
-                                                    <tech.icon className="w-12 h-12" />
-                                                </span>
-                                            </Tooltip>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div className='flex flex-col pt-[2%]'>
-                                <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
-                                    <FaHelmetSafety />
-                                    Backend
-                                </span>
-                                <ul className='flex flex-wrap gap-4 text-5xl py-5 items-center'>
-                                    {backend.map((tech, index) => (
-                                        <li key={index} className={`${tech.className}`}>
-                                            <Tooltip label={tech.label} hasArrow>
-                                                <span>
-                                                    <tech.icon className="w-12 h-12" />
-                                                </span>
-                                            </Tooltip>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div className='flex flex-col pt-[2%]'>
-                                <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
-                                    <SiAndroid />
-                                    Mobile
-                                </span>
-                                <ul className='flex flex-wrap gap-4  py-5 items-center'>
-                                    {mobile.map((tech, index) => (
-                                        <li key={index} className={`${tech.className}`}>
-                                            <Tooltip label={tech.label} hasArrow>
-                                                <span>
-                                                    <tech.icon className="w-12 h-12" />
-                                                </span>
-                                            </Tooltip>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div className='flex flex-col pt-[2%]'>
-                                <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
-                                    <FaGears />
-                                    DevOps
-                                </span>
-                                <ul className='flex flex-wrap gap-4 py-5 items-center'>
-                                    {devOps.map((tech, index) => (
-                                        <li key={index} className={`${tech.className}`}>
-                                            <Tooltip label={tech.label} hasArrow>
-                                                <span>
-                                                    <tech.icon className="w-12 h-12" />
-                                                </span>
-                                            </Tooltip>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
+                                    </motion.div>
+                                ))}
+                            </ul>
                         </div>
-                        <div className="md:w-1/2 absolute md:static w-full z-[1] blur-sm md:blur-none">
-                            <lottie-player
-                                autoplay
-                                loop
-                                mode="normal"
-                                src="https://lottie.host/6dec9da8-de4b-44f1-bb9c-1ca95d70fb59/5H2I83WxU9.json"
-                                className="w-20 h-20"
-                            ></lottie-player>
+                        <div className='flex flex-col pt-[2%]'>
+                            <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
+                                <FaIcons />
+                                Frontend
+                            </span>
+                            <ul className='flex flex-wrap gap-4 text-5xl py-5'>
+                                {frontend.map((tech, index) => (
+                                    <motion.div
+                                        key={index}
+                                        variants={techList}
+                                        initial="hidd"
+                                        whileInView="visi"
+                                        transition={{
+                                            delay: tech.delay,
+                                            duration: 1.5,
+                                            bounce: 0.55,
+                                            type: 'spring'
+                                        }}
+                                    >
+                                        <li key={index} className={`${tech.className}`}>
+                                            <Tooltip label={tech.label} hasArrow>
+                                                <span>
+                                                    <tech.icon className="w-12 h-12" />
+                                                </span>
+                                            </Tooltip>
+                                        </li>
+                                    </motion.div>
+
+                                ))}
+                            </ul>
                         </div>
-                    </section>
-                </Reveal>
+                        <div className='flex flex-col pt-[2%]'>
+                            <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
+                                <FaHelmetSafety />
+                                Backend
+                            </span>
+                            <ul className='flex flex-wrap gap-4 text-5xl py-5 items-center'>
+                                {backend.map((tech, index) => (
+                                    <motion.div
+                                        key={index}
+                                        variants={techList}
+                                        initial="hidd"
+                                        whileInView="visi"
+                                        transition={{
+                                            delay: tech.delay,
+                                            duration: 1.5,
+                                            bounce: 0.55,
+                                            type: 'spring'
+                                        }}
+                                    >
+                                        <li key={index} className={`${tech.className}`}>
+                                            <Tooltip label={tech.label} hasArrow>
+                                                <span>
+                                                    <tech.icon className="w-12 h-12" />
+                                                </span>
+                                            </Tooltip>
+                                        </li>
+                                    </motion.div>
+
+                                ))}
+                            </ul>
+                        </div>
+                        <div className='flex flex-col pt-[2%]'>
+                            <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
+                                <SiAndroid />
+                                Mobile
+                            </span>
+                            <ul className='flex flex-wrap gap-4  py-5 items-center'>
+                                {mobile.map((tech, index) => (
+                                    <motion.div
+                                        key={index}
+                                        variants={techList}
+                                        initial="hidd"
+                                        whileInView="visi"
+                                        transition={{
+                                            delay: tech.delay,
+                                            duration: 1.5,
+                                            bounce: 0.55,
+                                            type: 'spring'
+                                        }}
+                                    >
+                                        <li key={index} className={`${tech.className}`}>
+                                            <Tooltip label={tech.label} hasArrow>
+                                                <span>
+                                                    <tech.icon className="w-12 h-12" />
+                                                </span>
+                                            </Tooltip>
+                                        </li>
+                                    </motion.div>
+
+                                ))}
+                            </ul>
+                        </div>
+                        <div className='flex flex-col pt-[2%]'>
+                            <span className='border shadow-md rounded-full w-fit min-w-[180px] flex items-center justify-center h-fit min-h-[50px] gap-2 font-mono text-xl'>
+                                <FaGears />
+                                DevOps
+                            </span>
+                            <ul className='flex flex-wrap gap-4 py-5 items-center'>
+                                {devOps.map((tech, index) => (
+                                    <motion.div
+                                        key={index}
+                                        variants={techList}
+                                        initial="hidd"
+                                        whileInView="visi"
+                                        transition={{
+                                            delay: tech.delay,
+                                            duration: 1.5,
+                                            bounce: 0.55,
+                                            type: 'spring'
+                                        }}
+                                    >
+                                        <li key={index} className={`${tech.className}`}>
+                                            <Tooltip label={tech.label} hasArrow>
+                                                <span>
+                                                    <tech.icon className="w-12 h-12" />
+                                                </span>
+                                            </Tooltip>
+                                        </li>
+                                    </motion.div>
+
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="md:w-1/2 absolute md:static hidden md:block w-full z-[1] blur-sm md:blur-none">
+                        <lottie-player
+                            autoplay
+                            loop
+                            mode="normal"
+                            src="https://lottie.host/6dec9da8-de4b-44f1-bb9c-1ca95d70fb59/5H2I83WxU9.json"
+                            className="w-20 h-20"
+                        ></lottie-player>
+                    </div>
+                </section>
                 <section id="project" className="px-[10%] flex flex-col justify-center items-center gap-4 ">
                     <div className="w-full h-full flex">
                         <div className="flex gap-3 z-[2]">
@@ -261,7 +340,7 @@ const Home = () => {
                                     key={index}
                                     className="w-full h-auto overflow-hidden group cursor-pointer border rounded-xl flex flex-col relative hover:scale-[103%] duration-200 shadow-lg pb-4 md:pb-0"
                                 >
-                                    <a target="_blank" rel='noopener noreferrer'  href={project.link}>
+                                    <a target="_blank" rel='noopener noreferrer' href={project.link}>
                                         <figure>
                                             <div className="duration-200 w-full h-auto relative overflow-hidden">
                                                 <img className="w-full h-full aspect-[16/11.25] group-hover:scale-125 duration-300" src={`./img/project/${project.image}`} alt={project.title} />

@@ -26,7 +26,7 @@ function ProjectSection() {
                 whileInView={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
             >
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 gap-y-10 pt-[2%]">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-10 pt-[2%]">
                     {projects.map((project, index) => (
                         <article
                             key={index}

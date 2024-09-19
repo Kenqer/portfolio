@@ -9,6 +9,11 @@
   src: url(./font/CaviarDreams.ttf);
 }
 
+@font-face {
+  font-family: jetbrain;
+  src: url(./font/JetBrainsMono-VariableFont_wght.ttf);
+}
+
 html,body {
   scroll-behavior: smooth;
 }
