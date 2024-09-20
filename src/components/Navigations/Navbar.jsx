@@ -115,7 +115,7 @@ const Navbar = ({ history, location }) => {
                     </div>
 
                     <span className="font-[jawa] font-bold text-sm md:text-lg xl:text-xl block md:hidden xl:block">
-                        Available for new projects
+                        Available
                     </span>
                     <span className="font-[jawa] font-bold text-sm md:text-lg xl:text-xl hidden md:block xl:hidden">
                         Available
